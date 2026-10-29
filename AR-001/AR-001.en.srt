@@ -1,0 +1,678 @@
+1
+00:00:00,462 --> 00:00:01,610
+Land in Kochi.
+
+2
+00:00:02,028 --> 00:00:03,130
+Land in London.
+
+3
+00:00:03,631 --> 00:00:04,822
+Land in Tokyo.
+
+4
+00:00:05,240 --> 00:00:07,054
+The runway numbers look the same.
+
+5
+00:00:07,470 --> 00:00:09,454
+The white piano keys look the same.
+
+6
+00:00:09,903 --> 00:00:12,374
+Even the lights that guide you down look
+the same.
+
+7
+00:00:12,726 --> 00:00:13,853
+That is not luck.
+
+8
+00:00:14,870 --> 00:00:17,316
+Somebody wrote one rulebook for the whole
+sky.
+
+9
+00:00:17,697 --> 00:00:20,388
+And in the next ten minutes, you'll know
+exactly who.
+
+10
+00:00:20,888 --> 00:00:22,994
+Air Regulations, episode one.
+
+11
+00:00:23,477 --> 00:00:25,205
+Who writes the rules of the sky?
+
+12
+00:00:25,818 --> 00:00:26,881
+Here's the plan.
+
+13
+00:00:27,285 --> 00:00:28,263
+One treaty.
+
+14
+00:00:28,720 --> 00:00:30,697
+One United Nations agency.
+
+15
+00:00:31,166 --> 00:00:35,081
+And one chain of law that runs all the way
+down to your DGCA exam.
+
+16
+00:00:35,989 --> 00:00:36,992
+Chapter one.
+
+17
+00:00:37,394 --> 00:00:38,930
+How the sky got its rules.
+
+18
+00:00:39,782 --> 00:00:42,125
+1903: the Wright brothers fly.
+
+19
+00:00:42,479 --> 00:00:47,329
+Within sixteen years, aircraft are
+crossing borders, so in 1919, the Paris
+
+20
+00:00:47,349 --> 00:00:50,140
+Convention writes the first international
+air law.
+
+21
+00:00:50,650 --> 00:00:55,716
+1929: the Warsaw Convention sets the rules
+on airline liability.
+
+22
+00:00:56,110 --> 00:01:00,465
+Then, in the middle of World War Two,
+delegates from fifty-four nations meet in
+
+23
+00:01:00,485 --> 00:01:01,326
+Chicago.
+
+24
+00:01:02,336 --> 00:01:07,552
+Fifty-two of those States signed the
+Convention on 7 December 1944.
+
+25
+00:01:08,467 --> 00:01:12,997
+Its official name: the Convention on
+International Civil Aviation, ninety-six
+
+26
+00:01:13,017 --> 00:01:13,857
+articles.
+
+27
+00:01:14,318 --> 00:01:19,198
+And the article every examiner loves is
+Article One: every State has complete and
+
+28
+00:01:19,218 --> 00:01:22,773
+exclusive sovereignty over the airspace
+above its territory.
+
+29
+00:01:23,276 --> 00:01:26,771
+It came into force on 4 April 1947.
+
+30
+00:01:27,827 --> 00:01:33,012
+Quiz bonus: the signing date, 7 December,
+is now celebrated every year as
+
+31
+00:01:33,032 --> 00:01:35,231
+International Civil Aviation Day.
+
+32
+00:01:36,314 --> 00:01:38,358
+So what counts as a State's territory?
+
+33
+00:01:38,821 --> 00:01:39,969
+Start with the land.
+
+34
+00:01:40,405 --> 00:01:45,310
+Add the territorial sea, for India, twelve
+nautical miles out from the baseline along
+
+35
+00:01:45,330 --> 00:01:46,133
+the coast.
+
+36
+00:01:46,576 --> 00:01:48,919
+All the airspace above both is sovereign.
+
+37
+00:01:49,159 --> 00:01:50,862
+Beyond that lie the high seas.
+
+38
+00:01:51,250 --> 00:01:56,055
+Nobody owns that sky, and Article Twelve
+says the ICAO Rules of the Air apply
+
+39
+00:01:56,075 --> 00:01:56,875
+there.
+
+40
+00:01:57,689 --> 00:02:01,769
+So sovereign means one simple thing: no
+foreign aircraft enters without
+
+41
+00:02:01,789 --> 00:02:02,589
+permission.
+
+42
+00:02:03,464 --> 00:02:04,488
+Chapter two.
+
+43
+00:02:04,922 --> 00:02:06,711
+ICAO, the referee of the sky.
+
+44
+00:02:07,490 --> 00:02:12,019
+The Convention also created an
+organisation to run it: ICAO, the
+
+45
+00:02:12,040 --> 00:02:14,775
+International Civil Aviation Organization.
+
+46
+00:02:15,180 --> 00:02:19,235
+It's a specialised agency of the United
+Nations, with its headquarters in
+
+47
+00:02:19,255 --> 00:02:20,727
+Montreal, Canada.
+
+48
+00:02:21,120 --> 00:02:26,145
+And until enough States had ratified, a
+provisional version, PICAO, did the job
+
+49
+00:02:26,165 --> 00:02:27,678
+from 1945.
+
+50
+00:02:28,628 --> 00:02:30,267
+Don't mix it up with IATA.
+
+51
+00:02:30,753 --> 00:02:32,542
+ICAO is made of governments.
+
+52
+00:02:32,973 --> 00:02:35,632
+IATA is the airlines' own trade
+association.
+
+53
+00:02:36,694 --> 00:02:40,282
+Today, ICAO has one hundred and
+ninety-three member States.
+
+54
+00:02:40,687 --> 00:02:46,037
+India ratified the Convention on
+1 March 1947, a month before it
+
+55
+00:02:46,057 --> 00:02:47,594
+even came into force.
+
+56
+00:02:48,672 --> 00:02:49,590
+Did you know?
+
+57
+00:02:50,070 --> 00:02:55,025
+ICAO works in six official languages:
+Arabic, Chinese, English, French, Russian
+
+58
+00:02:55,045 --> 00:02:55,962
+and Spanish.
+
+59
+00:02:56,997 --> 00:03:00,553
+ICAO also runs seven regional offices
+around the world.
+
+60
+00:03:01,009 --> 00:03:05,439
+For India, the one that matters is the
+Asia and Pacific office, in Bangkok.
+
+61
+00:03:06,228 --> 00:03:11,003
+Inside ICAO: the Assembly, every member
+State, meeting at least once every three
+
+62
+00:03:11,023 --> 00:03:11,823
+years.
+
+63
+00:03:12,129 --> 00:03:14,959
+It elects the Council, the permanent
+governing body.
+
+64
+00:03:15,454 --> 00:03:19,384
+The Council is advised by the Air
+Navigation Commission, the technical
+
+65
+00:03:19,404 --> 00:03:21,377
+experts who draft the Annexes.
+
+66
+00:03:21,875 --> 00:03:26,607
+And the Secretariat, led by the Secretary
+General, runs the day-to-day work.
+
+67
+00:03:27,788 --> 00:03:28,809
+Exam trap!
+
+68
+00:03:29,292 --> 00:03:32,378
+Most books still say the Council has
+thirty-six members.
+
+69
+00:03:32,937 --> 00:03:36,098
+Since 12 June 2026, it's forty.
+
+70
+00:03:36,542 --> 00:03:40,784
+The four new seats are filled at a special
+Assembly in Montreal in November.
+
+71
+00:03:41,837 --> 00:03:43,924
+So what does ICAO actually produce?
+
+72
+00:03:44,522 --> 00:03:47,048
+SARPs, Standards and Recommended
+Practices.
+
+73
+00:03:47,535 --> 00:03:51,702
+A Standard says "shall": States must
+follow it, or tell ICAO they don't.
+
+74
+00:03:52,165 --> 00:03:56,169
+A Recommended Practice says "should":
+desirable, but not mandatory.
+
+75
+00:03:57,010 --> 00:03:58,585
+And if a State can't comply?
+
+76
+00:03:59,076 --> 00:04:02,695
+Article Thirty-Eight: it must notify ICAO
+immediately.
+
+77
+00:04:03,045 --> 00:04:07,570
+India publishes its differences in the
+AIP, section GEN 1.7.
+
+78
+00:04:08,350 --> 00:04:10,480
+Those Standards live in nineteen Annexes.
+
+79
+00:04:10,858 --> 00:04:15,183
+You'll meet all of them in this series,
+but start with four: Annex One, Personnel
+
+80
+00:04:15,203 --> 00:04:16,066
+Licensing.
+
+81
+00:04:16,518 --> 00:04:18,157
+Annex Two, Rules of the Air.
+
+82
+00:04:18,624 --> 00:04:20,715
+Annex Six, Operation of Aircraft.
+
+83
+00:04:21,070 --> 00:04:23,400
+Annex Eleven, Air Traffic Services.
+
+84
+00:04:23,660 --> 00:04:26,025
+And those identical runways from the
+start?
+
+85
+00:04:26,591 --> 00:04:28,704
+That's Annex Fourteen, Aerodromes.
+
+86
+00:04:29,820 --> 00:04:35,100
+Annex Fourteen is why a pilot from Kochi
+can land in London with no surprises: the
+
+87
+00:04:35,120 --> 00:04:39,395
+same holding lines, the same edge lights,
+the same markings, everywhere on the
+
+88
+00:04:39,415 --> 00:04:40,215
+planet.
+
+89
+00:04:41,374 --> 00:04:43,675
+Here's a way to remember those four
+Annexes.
+
+90
+00:04:44,127 --> 00:04:45,290
+One: the pilot.
+
+91
+00:04:45,646 --> 00:04:46,645
+Two: the rules.
+
+92
+00:04:47,147 --> 00:04:48,509
+Six: the aeroplane.
+
+93
+00:04:48,885 --> 00:04:50,337
+Eleven: the controller.
+
+94
+00:04:51,616 --> 00:04:56,721
+Key point: under the Annexes sit the PANS,
+Procedures for Air Navigation Services,
+
+95
+00:04:56,741 --> 00:04:58,169
+the detailed how-to.
+
+96
+00:04:58,601 --> 00:05:01,349
+PANS-ATM is Doc 4444.
+
+97
+00:05:01,776 --> 00:05:04,059
+PANS-OPS is Doc 8168.
+
+98
+00:05:04,493 --> 00:05:06,601
+These two numbers come up again and again.
+
+99
+00:05:07,959 --> 00:05:09,004
+Chapter three.
+
+100
+00:05:09,482 --> 00:05:11,632
+From Chicago to your DGCA exam.
+
+101
+00:05:12,383 --> 00:05:14,108
+Here's the chain of law in India.
+
+102
+00:05:14,603 --> 00:05:17,415
+At the top: the Chicago Convention and its
+Annexes.
+
+103
+00:05:17,878 --> 00:05:23,119
+Parliament turns them into law with the
+Bharatiya Vayuyan Adhiniyam, 2024.
+
+104
+00:05:23,486 --> 00:05:26,128
+The Central Government makes Rules under
+that Act.
+
+105
+00:05:26,513 --> 00:05:30,007
+DGCA issues the Civil Aviation
+Requirements, the CARs.
+
+106
+00:05:30,404 --> 00:05:34,807
+And the Airports Authority of India
+publishes the AIP, AICs and NOTAMs.
+
+107
+00:05:35,741 --> 00:05:40,066
+The Act itself: Act number sixteen of
+2024, in force from
+
+108
+00:05:40,086 --> 00:05:42,671
+1 January 2025.
+
+109
+00:05:43,070 --> 00:05:47,265
+It replaced the Aircraft Act of 1934,
+after ninety years.
+
+110
+00:05:47,811 --> 00:05:53,410
+Section three sets up DGCA, section five
+BCAS, section seven the AAIB,
+
+111
+00:05:53,430 --> 00:05:57,085
+and section eleven lets the government
+make rules to implement the Chicago
+
+112
+00:05:57,105 --> 00:05:57,988
+Convention.
+
+113
+00:05:59,020 --> 00:06:00,445
+Exam trap number two.
+
+114
+00:06:00,870 --> 00:06:05,236
+If the old Act is gone, are the Aircraft
+Rules of 1937 dead?
+
+115
+00:06:05,720 --> 00:06:06,520
+No!
+
+116
+00:06:06,854 --> 00:06:10,665
+Section forty-three keeps them working
+until the new rules are published.
+
+117
+00:06:11,098 --> 00:06:15,188
+In October, the government told the
+Supreme Court the new rules were approved
+
+118
+00:06:15,208 --> 00:06:18,439
+and would be published within weeks, so
+know both names.
+
+119
+00:06:19,453 --> 00:06:24,206
+Who's who under the Ministry of Civil
+Aviation: DGCA, the safety regulator,
+
+120
+00:06:24,226 --> 00:06:26,649
+licences, airworthiness, the CARs.
+
+121
+00:06:27,045 --> 00:06:29,119
+BCAS, aviation security.
+
+122
+00:06:29,532 --> 00:06:31,691
+AAIB, accident investigation.
+
+123
+00:06:32,200 --> 00:06:35,747
+And AAI, which runs airports and air
+navigation services.
+
+124
+00:06:36,969 --> 00:06:39,121
+Studying for EASA or the UK CAA?
+
+125
+00:06:39,620 --> 00:06:41,280
+Same Chicago foundation.
+
+126
+00:06:41,733 --> 00:06:44,945
+In Europe, EASA writes common rules for
+its member States.
+
+127
+00:06:45,332 --> 00:06:49,308
+In Britain, the UK CAA regulates under the
+Air Navigation Order.
+
+128
+00:06:49,777 --> 00:06:52,927
+So the ICAO part of this lesson is
+identical for you.
+
+129
+00:06:53,994 --> 00:06:54,912
+Quick check.
+
+130
+00:06:55,354 --> 00:06:59,259
+Which Article gives every State complete
+and exclusive sovereignty over its
+
+131
+00:06:59,279 --> 00:07:00,125
+airspace?
+
+132
+00:07:00,606 --> 00:07:01,584
+Think about it.
+
+133
+00:07:04,646 --> 00:07:05,687
+Article One.
+
+134
+00:07:06,018 --> 00:07:09,043
+Article Two only defines what the
+territory is.
+
+135
+00:07:10,235 --> 00:07:11,874
+Where is ICAO headquartered?
+
+136
+00:07:12,344 --> 00:07:13,510
+Lock in your answer.
+
+137
+00:07:16,589 --> 00:07:20,231
+Montreal, Canada, not Chicago, where the
+Convention was signed.
+
+138
+00:07:21,410 --> 00:07:24,620
+Last one: how many States sit on the ICAO
+Council today?
+
+139
+00:07:25,154 --> 00:07:26,175
+Three seconds.
+
+140
+00:07:29,281 --> 00:07:31,514
+Forty, since June 2026.
+
+141
+00:07:32,656 --> 00:07:33,697
+Let's recap.
+
+142
+00:07:34,229 --> 00:07:39,576
+Chicago, 1944: ninety-six articles, in
+force in 1947.
+
+143
+00:07:39,911 --> 00:07:41,635
+Article One: sovereignty.
+
+144
+00:07:42,095 --> 00:07:47,210
+ICAO: a UN agency in Montreal, one hundred
+and ninety-three States, and a
+
+145
+00:07:47,230 --> 00:07:48,533
+Council of forty.
+
+146
+00:07:49,053 --> 00:07:52,015
+Standards say shall; recommended practices
+say should.
+
+147
+00:07:52,479 --> 00:07:56,609
+And in India: the Act, the Rules, the
+CARs, then the AIP and NOTAMs.
+
+148
+00:07:57,897 --> 00:08:02,663
+Next episode: the Chicago Convention
+articles DGCA actually asks,
+
+149
+00:08:02,683 --> 00:08:07,163
+cabotage, the documents every aircraft
+must carry, and the Article that trips
+
+150
+00:08:07,183 --> 00:08:08,080
+everyone up.
+
+151
+00:08:08,594 --> 00:08:10,233
+Subscribe so you don't miss it.
+
+152
+00:08:10,644 --> 00:08:13,456
+A new lesson every day at ten fifteen in
+the morning.
