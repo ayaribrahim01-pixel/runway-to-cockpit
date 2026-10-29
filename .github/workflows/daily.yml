@@ -52,6 +52,16 @@ jobs:
           echo "Building $EP"
           echo "episode=$EP" >> "$GITHUB_OUTPUT"
 
+      - name: Check the YouTube key is for the Runway To Cockpit channel
+        if: steps.pick.outputs.episode != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          pip install -q google-api-python-client google-auth pyyaml
+          python upload/check_channel.py
+
       - uses: actions/setup-node@v4
         if: steps.pick.outputs.episode != ''
         with: {node-version: "20"}

@@ -426,7 +426,7 @@ def youtube_description(ep: dict, chapters_yt: list[tuple[float, str]], cfg: dic
     nxt = ep.get("next", {})
     if nxt.get("title"):
         parts.append(f"▶ Next lesson: {nxt['title'].replace('*', '')}")
-    parts.append(f"New lesson every day at {nice_time(cfg['publish']['time_ist'])} IST. Subscribe and turn on notifications.")
+    parts.append("Subscribe and turn on notifications so you never miss a lesson.")
     parts.append("")
     parts.append("For exam preparation. Always check the current DGCA / ICAO documents before relying on any figure.")
     parts.append("")

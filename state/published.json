@@ -2,10 +2,11 @@
  "published": [
   {
    "code": "AR-001",
-   "date": "2026-10-29",
+   "date": "2026-10-30",
    "published_at": "2026-10-30T04:45:00.000Z",
-   "long_id": "bhoiylMNEgo",
-   "short_id": "LXh2qd-uzHI"
+   "long_id": "em42mOXLCJU",
+   "short_id": "",
+   "note": "Ep 1 lives on the channel as the Studio upload; the first API upload (bhoiylMNEgo/LXh2qd-uzHI) went to the wrong channel and was set to private"
   }
  ]
 }

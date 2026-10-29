@@ -2,6 +2,7 @@
 channel:
   name: "Runway To Cockpit"
   handle: "@runwaytocockpit"
+  youtube_channel_id: UCqA3vIAcB_DJ7IHuboSL1sw   # uploads are refused if the key is for any other channel
   language: en
 publish:
   time_ist: "10:15"   # daily go-live time (India Standard Time)

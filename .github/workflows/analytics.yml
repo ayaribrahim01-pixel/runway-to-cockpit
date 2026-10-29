@@ -31,7 +31,8 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
           if [ -z "$YT_REFRESH_TOKEN" ]; then echo "YouTube isn't connected yet. Skipping."; exit 0; fi
-          pip install -q google-api-python-client google-auth
+          pip install -q google-api-python-client google-auth pyyaml
+          python upload/check_channel.py || { echo "Wrong YouTube channel for this key. Skipping analytics."; exit 0; }
           python upload/youtube_update.py || true
           python engine/analytics.py
       - name: Save
