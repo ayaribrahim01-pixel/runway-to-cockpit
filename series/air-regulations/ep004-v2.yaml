@@ -1,0 +1,634 @@
+# Air Regulations · Episode 4 (v2 style) — Air Law Conventions You Must Know
+# Narration markup: {{n}} = visual cue, [[pause s]] = silence, {shown|spoken}, *word* = emphasis.
+
+series: air-regulations
+series_name: Air Regulations
+series_short: Air Regs
+code: AR-004
+episode: 4
+style: v2
+title: "Air Law Conventions You Must Know"
+subtitle: "Paris to Beijing: who pays, which crime, which treaty"
+intro_chapter: One problem, one treaty
+playlist: Air Regulations — DGCA CPL/ATPL
+next:
+  title: "ICAO in Depth & Other Aviation Bodies"
+
+sources:
+  - "ICAO postal history: The 1919 Paris Convention (signed 13 Oct 1919, in force 11 Jul 1922, created ICAN)"
+  - "ICAO postal history: The Warsaw system on air carriers' liability (Warsaw 12 Oct 1929, in force 13 Feb 1933; 125,000 francs; Hague Protocol 1955 doubled to 250,000)"
+  - "Tokyo Convention 1963 text, UN Treaty Series Vol. 704, No. 10106 (Arts 1, 3, 5, 6, 8, 9, 11; in force 4 Dec 1969)"
+  - "ICAO Legal Bureau, current lists of parties (checked 26 Oct 2026): Hague 1970 (in force 14 Oct 1971; India ratified 12 Nov 1982), Montreal 1971 (in force 26 Jan 1973; 190 parties), Airports Protocol 1988 (in force 6 Aug 1989), Montreal 1999 (in force 4 Nov 2003; India acceded 1 May 2009), Beijing Protocol 2010 (in force 1 Jan 2018; India 1 Mar 2019), Cape Town Aircraft Protocol (in force 1 Mar 2006; India 1 Jul 2008)"
+  - "ICAO: 2024 revised limits of liability under the Montreal Convention 1999 (151,880 SDR death/injury; 6,303 delay; 1,519 baggage; 26 SDR/kg cargo; from 28 Dec 2024)"
+  - "Rome Convention on damage to third parties on the surface, signed 7 Oct 1952, in force 4 Feb 1958"
+  - "Beijing Convention 2010 (in force 1 Jul 2018): new offences incl. using civil aircraft as a weapon"
+  - "Gazette of India: Carriage by Air (Amendment) Act 2009 (Act 28 of 2009); Anti-Hijacking Act 2016 (Act 30 of 2016); Protection of Interests in Aircraft Objects Act 2025 (Act 17 of 2025, in force 1 May 2025, DGCA = registry authority)"
+  - "EUR-Lex summary: Regulation (EC) 2027/97 as amended by 889/2002 applies Montreal rules to all flights of EU carriers"
+
+youtube:
+  title: "Air Law Conventions for DGCA: Warsaw, Tokyo, Hague, Montreal, Cape Town | DGCA Air Regulations Ep 4"
+  description: |
+    Every air law convention DGCA asks, sorted by the problem it solves: Paris 1919, Warsaw 1929 and Montreal 1999 (who pays when something goes wrong), Rome 1952 (damage on the ground), Tokyo 1963, Hague 1970, Montreal 1971, the 1988 Airports Protocol and Beijing 2010 (crimes against aviation), and Cape Town 2001 (financing aircraft). Plus the Indian Acts that put them into law.
+  key_facts:
+    - "Paris 1919: first air law treaty, airspace sovereignty, created ICAN"
+    - "Warsaw 1929: carrier liability for international carriage; Hague Protocol 1955 doubled the passenger limit"
+    - "Montreal 1999: replaced the Warsaw system; in force 4 Nov 2003; India acceded 2009 (Carriage by Air Act 1972, amended 2009)"
+    - "Montreal 1999 limits from 28 Dec 2024: 151,880 SDR death/injury, 6,303 delay, 1,519 baggage, 26 SDR/kg cargo"
+    - "Rome 1952: damage by foreign aircraft to third parties on the surface"
+    - "Tokyo 1963: offences on board; State of registration has jurisdiction; commander may restrain, disembark, deliver"
+    - "Hague 1970: unlawful seizure (hijacking); Montreal 1971: sabotage and acts against safety; Montreal 1988 Protocol: airports"
+    - "Beijing 2010: aircraft used as a weapon; India's Anti-Hijacking Act 2016 gives effect to Hague + Beijing Protocol"
+    - "Cape Town 2001: international interests in aircraft; India's Act 17 of 2025 in force 1 May 2025"
+  tags: [DGCA, Air Regulations, air law conventions, Warsaw Convention, Montreal Convention 1999, Tokyo Convention, Hague Convention, Cape Town Convention, CPL, ATPL, ICAO, pilot training India]
+  hashtags: ["#DGCA", "#AirRegulations", "#CPL", "#PilotTraining", "#AviationLaw", "#Aviation"]
+
+thumbnail:
+  line1: Which treaty?
+  line2: 2 seconds
+  badge: AIR REGS · EP 04
+  kicker: Air law conventions · Exam focus
+  markers:
+    - {lat: 35.68, lon: 139.69}
+    - {lat: 52.08, lon: 4.30}
+    - {lat: 45.50, lon: -73.57}
+  arcs:
+    - {from: [139.69, 35.68], to: [4.30, 52.08]}
+    - {from: [4.30, 52.08], to: [-73.57, 45.50]}
+  rotate: [30, 32]
+
+scenes:
+  # ───────────────────────── HOOK
+  - id: hook
+    type: kinetic
+    say: >-
+      A hijacking over the sea. {{0}}A bomb in the hold. {{1}}A lost suitcase in Delhi. {{2}}Three problems, three
+      different treaties. {{3}}By the end of this lesson, you'll match each one in two seconds.
+    data:
+      kicker: Air law conventions
+      mode: replace
+      lines:
+        - {t: "A *hijacking*.", cue: 0}
+        - {t: "A *bomb* in the hold.", cue: 1}
+        - {t: "A *lost bag*.", cue: 2}
+        - {t: "Which *treaty*?", cue: 3}
+
+  - id: title
+    type: title3d
+    say: >-
+      Air Regulations, episode four. {{0}}The air law conventions you must know.
+    data:
+      title: "Air Law *Conventions*"
+      sub: "Paris to Beijing: who pays, which crime, which treaty"
+      shot: cruise
+      view: side
+
+  - id: roadmap
+    type: whiteboard
+    say: >-
+      Here's the trick. Don't learn them by date. {{0}}Learn them by the problem they solve. {{1}}Who pays when
+      something goes wrong. {{2}}Crimes against aircraft. {{3}}And money for buying aircraft.
+    data:
+      kicker: Today's map
+      title: "Sort treaties by *problem*"
+      nodes:
+        - {id: q, label: "What's the problem?", x: 660, y: 240, w: 600, h: 120, cue: 0}
+        - {id: a, label: "Who pays?", sub: "Warsaw · Montreal 99 · Rome", x: 150, y: 520, w: 500, h: 150, cue: 1, color: "#1F6FB2"}
+        - {id: b, label: "Which crime?", sub: "Tokyo · Hague · Montreal 71 · Beijing", x: 710, y: 520, w: 500, h: 150, cue: 2, color: "#D9363E"}
+        - {id: c, label: "Who owns it?", sub: "Cape Town", x: 1270, y: 520, w: 500, h: 150, cue: 3, color: "#15803D"}
+      edges:
+        - {from: q, to: a, cue: 1}
+        - {from: q, to: b, cue: 2}
+        - {from: q, to: c, cue: 3}
+
+  # ───────────────────────── CHAPTER 1
+
+  - id: timeline
+    type: timeline
+    say: >-
+      {{0}}Here's the family tree in one line. {{1}}Paris, {1919.|nineteen nineteen.} {{2}}Warsaw, {1929.|nineteen
+      twenty-nine.} {{3}}Chicago, {1944,|nineteen forty-four,} which created ICAO. {{4}}And ICAO then hosted almost every
+      air law treaty after that, from Tokyo to Beijing.
+    data:
+      kicker: "Air law · 1919 → 2010"
+      title: "The *family tree*"
+      events:
+        - {year: "Before", title: "No common rules", sub: "each State on its own"}
+        - {year: "1919", title: "Paris", sub: "sovereignty · ICAN"}
+        - {year: "1929", title: "Warsaw", sub: "carrier liability"}
+        - {year: "1944", title: "Chicago", sub: "creates *ICAO*"}
+        - {year: "1963–2010", title: "ICAO treaties", sub: "Tokyo → Beijing"}
+
+  - id: ch1
+    type: chapter
+    say: >-
+      Chapter one. {{0}}Where it started, and who pays.
+    data:
+      n: 1
+      title: "Where it started, and *who pays*"
+
+  - id: paris
+    type: doc
+    say: >-
+      {{0}}The first big air law treaty came just after the First World War: Paris, {13 October 1919.|the thirteenth of
+      October, nineteen nineteen.} {{1}}It said every State has full sovereignty over the airspace above its territory.
+      {{2}}And it set up a commission to keep the rules up to date, called {ICAN.|I-C-A-N.} {{3}}Twenty-five years later,
+      Chicago built on that work.
+    data:
+      kicker: "Paris Convention · 1919"
+      title: "The *first* rulebook for the sky"
+      header: Convention relating to the Regulation of Aerial Navigation
+      headerSub: "Paris · 13 October 1919 · in force 11 July 1922"
+      lines:
+        - "# The idea"
+        - "Each State: full sovereignty over its airspace"
+        - "# The body"
+        - "International Commission for Air Navigation (ICAN)"
+        - "# What came next"
+        - "Chicago 1944 and ICAO took over the job"
+      hl: {line: 1, cue: 1}
+      zoom: {cue: 2, scale: 1.15}
+      stamp: {text: "1919", cue: 3}
+
+  - id: warsaw
+    type: split
+    say: >-
+      {{0}}Ten years later, Warsaw, {1929.|nineteen twenty-nine.} It answers one question: if a passenger is hurt, or bags
+      or cargo are lost or late on an international flight, {{1}}what does the airline owe? {{2}}It set the documents too:
+      the ticket, the baggage check and the air waybill. {{3}}And it capped the airline's payout for a passenger at one
+      hundred and twenty-five thousand gold francs.
+    data:
+      visual: {shot: cruise, view: wing}
+      side: right
+      tag: "Warsaw Convention · 12 October 1929"
+      kicker: Carrier liability
+      title: "What does the airline *owe*?"
+      items:
+        - {icon: medical, t: "Passenger injury or death"}
+        - {icon: briefcase, t: "Baggage and cargo: lost, damaged, *late*"}
+        - {icon: doc, t: "Ticket · baggage check · air waybill"}
+        - {icon: scale, t: "Limit: 125,000 gold francs per passenger"}
+
+  - id: hague55
+    type: examtip
+    say: >-
+      {{0}}Exam trap: the Hague Protocol of {1955|nineteen fifty-five} is not the Hague hijacking convention. {{1}}The
+      {1955|nineteen fifty-five} Protocol only amended Warsaw, {{2}}and doubled the passenger limit to two hundred and fifty
+      thousand francs.
+    data:
+      variant: trap
+      q: "The Hague Protocol 1955 deals with…"
+      wrong: "Hijacking"
+      wrongCue: 0
+      right: "Amending Warsaw: liability limit doubled"
+      rightCue: 1
+      sub: "125,000 → *250,000* francs. Hijacking is The Hague *1970*."
+      subCue: 2
+
+  - id: montreal99
+    type: ladder
+    say: >-
+      {{0}}By the {1990s|nineteen nineties} the Warsaw system was a patchwork of six instruments. {{1}}So in {1999,|nineteen
+      ninety-nine,} ICAO replaced it with one treaty: the Montreal Convention. {{2}}It came into force in {2003.|two
+      thousand three.} {{3}}For death or injury it has two tiers: up to a set amount, the airline pays whether or not it was
+      at fault. {{4}}Above that, it pays unless it proves the damage wasn't its fault, and there's no upper cap.
+    data:
+      kicker: "Montreal Convention · 28 May 1999"
+      title: "One treaty *replaces* Warsaw"
+      axis: "Montreal 1999"
+      tiers:
+        - {label: "Warsaw system: 6 instruments", who: "1929–1999"}
+        - {label: "Montreal Convention signed", who: "28 May 1999"}
+        - {label: "In force", who: "4 Nov 2003"}
+        - {label: "Tier 1: pays even without fault", who: "up to the limit"}
+        - {label: "Tier 2: pays unless it proves no fault", who: "no cap"}
+
+  - id: limits
+    type: grid
+    say: >-
+      {{0}}And the limits, revised by ICAO from {28 December 2024.|the twenty-eighth of December, twenty twenty-four.}
+      They're in Special Drawing Rights, the I-M-F's basket currency. {{1}}Death or injury: one hundred fifty-one thousand,
+      eight hundred and eighty. {{2}}Delay: six thousand three hundred and three. {{3}}Baggage: one thousand five hundred
+      and nineteen. {{4}}Cargo: twenty-six per kilo.
+    data:
+      kicker: "Montreal 1999 limits · in SDR · from 28 Dec 2024"
+      cols: 4
+      groupCue: [0, 0, 0, 0]
+      spotlight: [[1, 0], [2, 1], [3, 2], [4, 3]]
+      tiles:
+        - {n: "151,880", label: "Death or injury (tier 1)"}
+        - {n: "6,303", label: "Delay, per passenger"}
+        - {n: "1,519", label: "Baggage, per passenger"}
+        - {n: "26", label: "Cargo, per kg"}
+
+  - id: india99
+    type: examtip
+    say: >-
+      {{0}}Key point for India. {{1}}India joined the Montreal Convention in {2009.|two thousand nine.} {{2}}It's law here
+      through the Carriage by Air Act of {1972,|nineteen seventy-two,} amended in {2009.|two thousand nine.}
+    data:
+      variant: key
+      big: "India · *Montreal 1999*"
+      bigCue: 0
+      lines: ["Acceded 1 May 2009", "Carriage by Air Act 1972, amended *2009*"]
+      lineCues: [1, 2]
+
+  - id: rome
+    type: whiteboard
+    say: >-
+      {{0}}Warsaw and Montreal protect the people inside the aircraft. {{1}}But what about someone on the ground? {{2}}That's
+      Rome, {1952:|nineteen fifty-two:} damage caused by a foreign aircraft to third parties on the surface. {{3}}Think of a
+      wheel falling onto a house.
+    data:
+      kicker: "Rome Convention · 7 October 1952"
+      title: "Inside vs *on the ground*"
+      nodes:
+        - {id: in, label: "On board", sub: "Warsaw 1929 → Montreal 1999", x: 160, y: 300, w: 560, h: 150, cue: 0, color: "#1F6FB2"}
+        - {id: out, label: "On the ground", sub: "third parties", x: 1100, y: 300, w: 560, h: 150, cue: 1, color: "#C98800"}
+        - {id: rome, label: "Rome 1952", sub: "damage by foreign aircraft", x: 1100, y: 560, w: 560, h: 150, cue: 2}
+      edges:
+        - {from: out, to: rome, cue: 2}
+      notes:
+        - {x: 1100, y: 770, text: "A wheel falls on a house? *Rome*.", cue: 3, size: 32}
+
+  # ───────────────────────── CHAPTER 2
+  - id: ch2
+    type: chapter
+    say: >-
+      Chapter two. {{0}}Crimes against aviation.
+    data:
+      n: 2
+      title: "Crimes against *aviation*"
+      bg3d: {shot: cruise, view: chase, shift: 0.3}
+
+  - id: tokyo
+    type: doc
+    say: >-
+      {{0}}Tokyo, {1963:|nineteen sixty-three:} offences and other acts committed on board. {{1}}The State where the
+      aircraft is registered has jurisdiction. {{2}}And the commander gets real powers: {{3}}restrain an unruly person,
+      {{4}}disembark them at the next landing, {{5}}or hand someone who committed a serious offence to the authorities there.
+    data:
+      kicker: "Tokyo Convention · 14 September 1963"
+      title: "Trouble *on board*"
+      header: Convention on Offences and Certain Other Acts Committed on Board Aircraft
+      headerSub: "Tokyo · 1963 · in force 4 December 1969"
+      lines:
+        - "# Jurisdiction"
+        - "State of registration of the aircraft"
+        - "# Powers of the aircraft commander"
+        - "Restrain the person (Art. 6)"
+        - "Disembark them (Art. 8)"
+        - "Deliver them to the authorities (Art. 9)"
+      hl: {line: 1, cue: 1}
+      zoom: {cue: 2, scale: 1.15}
+      stamp: {text: "Commander's powers", cue: 5}
+
+  - id: inflight
+    type: compare
+    say: >-
+      {{0}}And Tokyo has a classic exam question: when is an aircraft in flight? {{1}}For the treaty in general, from the
+      moment power is applied for take-off until the landing run ends. {{2}}But for the commander's powers, from when all
+      external doors are closed after boarding until a door opens to get off.
+    data:
+      kicker: Tokyo · "in flight"
+      title: "Two definitions, *one* treaty"
+      left:
+        head: "Art. 1(3) · The Convention"
+        chip: POWER TO LANDING RUN
+        items: ["Starts: take-off power applied", "Ends: landing run complete"]
+      right:
+        head: "Art. 5(2) · Commander's powers"
+        chip: DOORS CLOSED TO OPEN
+        items: ["Starts: all external doors closed", "Ends: a door opened to disembark"]
+
+
+  - id: tokyo11
+    type: examtip
+    say: >-
+      {{0}}Key point: Tokyo already talked about hijacking, in Article Eleven. {{1}}If someone seizes the aircraft, States
+      must help give control back to the lawful commander, {{2}}and let the passengers and crew continue their journey as
+      soon as they can.
+    data:
+      variant: key
+      big: "Tokyo · *Art. 11*"
+      bigCue: 0
+      lines: ["Restore control to the *lawful commander*", "Passengers and crew continue ASAP"]
+      lineCues: [1, 2]
+
+  - id: hague70
+    type: kinetic
+    say: >-
+      {{0}}Then a wave of hijackings in the late sixties. {{1}}The Hague, {1970:|nineteen seventy:} the Convention for the
+      Suppression of Unlawful Seizure of Aircraft. {{2}}In plain words: hijacking.
+    data:
+      tone: accent
+      mode: stack
+      kicker: "The Hague · 16 December 1970"
+      lines:
+        - {t: "A wave of *hijackings*", cue: 0}
+        - {t: "The Hague *1970*", cue: 1}
+        - {t: "= unlawful *seizure*", cue: 2}
+
+  - id: montreal71
+    type: count
+    say: >-
+      {{0}}A year later, Montreal, {1971:|nineteen seventy-one:} acts against the safety of civil aviation. Sabotage, a bomb
+      on board, attacking air navigation facilities. {{1}}It's one of the most widely joined air law treaties of all:
+      one hundred and ninety parties.
+    data:
+      kicker: "Montreal Convention · 23 September 1971"
+      value: 190
+      cue: 1
+      countFrames: 40
+      label: "Parties: *sabotage* treaty"
+      sub: "In force 26 January 1973 · India ratified 1982"
+      dots: 190
+      dotsLabel: "1 dot = 1 party"
+
+
+  - id: two-montreals
+    type: examtip
+    say: >-
+      {{0}}Exam trap: there are two famous Montreal conventions. {{1}}Montreal {1971|nineteen seventy-one} is about
+      sabotage. {{2}}Montreal {1999|nineteen ninety-nine} is about the airline's liability to passengers. Read the year
+      before you answer.
+    data:
+      variant: trap
+      q: "\"Montreal Convention\" in a liability question means…"
+      wrong: "Montreal 1971"
+      wrongCue: 1
+      right: "Montreal 1999"
+      rightCue: 2
+      sub: "*1971* = sabotage · *1999* = carrier liability"
+      subCue: 2
+
+  - id: security-grid
+    type: grid
+    say: >-
+      {{0}}Now the whole security family on one screen. {{1}}Tokyo: acts on board. {{2}}The Hague: hijacking.
+      {{3}}Montreal seventy-one: sabotage. {{4}}The Montreal Protocol of {1988:|nineteen eighty-eight:} violence at
+      international airports. {{5}}And Beijing, {2010:|twenty ten:} new crimes, like using a civil aircraft as a weapon.
+    data:
+      kicker: The security family
+      cols: 5
+      groupCue: [0, 0, 0, 0, 0]
+      spotlight: [[1, 0], [2, 1], [3, 2], [4, 3], [5, 4]]
+      tiles:
+        - {n: 1963, label: "Tokyo · acts on board"}
+        - {n: 1970, label: "The Hague · hijacking"}
+        - {n: 1971, label: "Montreal · sabotage"}
+        - {n: 1988, label: "Montreal Protocol · airports"}
+        - {n: 2010, label: "Beijing · aircraft as weapon"}
+
+  - id: remember-sec
+    type: examtip
+    say: >-
+      {{0}}Here's a way to lock it in. {{1}}Tokyo is about behaviour: the unruly passenger. {{2}}Hague starts with H, like
+      hijack. {{3}}Montreal seventy-one: the bomb. {{4}}And Beijing: the aircraft itself becomes the weapon.
+    data:
+      variant: remember
+      big: "*T*rouble · *H*ijack · *B*omb · *W*eapon"
+      bigSize: 64
+      bigCue: 0
+      lines: ["Tokyo → trouble on board", "Hague → *H*ijack", "Montreal 71 → bomb · Beijing → weapon"]
+      lineCues: [1, 2, 3]
+
+  - id: india-hijack
+    type: doc
+    say: >-
+      {{0}}And in Indian law? The Anti-Hijacking Act of {2016|twenty sixteen} gives effect to The Hague Convention and the
+      Beijing Protocol. {{1}}It replaced the old Act of {1982.|nineteen eighty-two.} {{2}}And if a hijacking causes the
+      death of a hostage or a security officer, {{3}}the maximum punishment is death.
+    data:
+      kicker: India · Act 30 of 2016
+      title: "Hijacking in *Indian law*"
+      header: The Anti-Hijacking Act, 2016
+      headerSub: "Gazette of India · 16 May 2016"
+      lines:
+        - "# Gives effect to"
+        - "The Hague Convention 1970 + Beijing Protocol 2010"
+        - "# Repeals"
+        - "Anti-Hijacking Act, 1982"
+        - "# Section 4"
+        - "Hijack causing death of a hostage → death penalty"
+      hl: {line: 1, cue: 0}
+      zoom: {cue: 2, scale: 1.15}
+      stamp: {text: "Max: death", cue: 3}
+
+  # ───────────────────────── CHAPTER 3
+  - id: ch3
+    type: chapter
+    say: >-
+      Chapter three. {{0}}Who owns the aircraft?
+    data:
+      n: 3
+      title: "Who *owns* the aircraft?"
+
+  - id: capetown
+    type: globe
+    say: >-
+      Most airliners in India are leased. {{0}}So if an airline stops paying, can the lessor in Dublin get its aircraft back
+      from Delhi? {{1}}That's Cape Town, {2001:|two thousand one:} a convention plus an aircraft protocol. {{2}}It creates an
+      international interest in aircraft, recorded in one international registry, {{3}}with clear remedies when the lessee
+      defaults.
+    data:
+      kicker: "Cape Town Convention · 16 November 2001"
+      title: "Leased aircraft, *global* rules"
+      notes:
+        - {icon: doc, text: "International interest", sub: "one global registry", cue: 2}
+        - {icon: law, text: "Remedies on default", sub: "the lessor can repossess", cue: 3}
+      globe:
+        start: {lon: 30, lat: 35}
+        focus:
+          - {cue: 1, lon: 40, lat: 30}
+        markers:
+          - {lat: 53.35, lon: -6.26, label: "Dublin", cue: 0, labelPos: l}
+          - {lat: 28.61, lon: 77.21, label: "Delhi", cue: 0, big: true}
+        arcs:
+          - {from: Dublin, to: Delhi, cue: 0, dur: 40}
+
+  - id: india-ct
+    type: timeline
+    say: >-
+      {{0}}And India's side of the story is recent. {{1}}Cape Town was signed in {2001.|two thousand one.} {{2}}The aircraft
+      protocol came into force in {2006.|two thousand six.} {{3}}India joined in {2008.|two thousand eight.} {{4}}But only in
+      {2025|twenty twenty-five} did Parliament pass the Protection of Interests in Aircraft Objects Act, in force from {1
+      May,|the first of May,} with DGCA as the registry authority.
+    data:
+      kicker: Cape Town and India
+      title: "From treaty to *Indian law*"
+      events:
+        - {year: "2001", title: "Signed", sub: "Cape Town · 16 Nov"}
+        - {year: "2006", title: "Aircraft protocol", sub: "in force 1 Mar"}
+        - {year: "2008", title: "India joins", sub: "effective 1 Jul"}
+        - {year: "2025", title: "Indian Act", sub: "in force *1 May* · DGCA registry"}
+
+
+  - id: why-ct
+    type: kinetic
+    say: >-
+      {{0}}Why should a student pilot care? {{1}}Lower risk for lessors can mean cheaper leases for Indian airlines. {{2}}And
+      more aircraft means more cockpits to fill.
+    data:
+      tone: sky
+      mode: stack
+      lines:
+        - {t: "Why should *you* care?", cue: 0}
+        - {t: "Lower risk → *cheaper leases*", cue: 1}
+        - {t: "More aircraft → more *cockpits*", cue: 2}
+
+  - id: easa
+    type: examtip
+    say: >-
+      {{0}}Studying for EASA or the UK? Same treaties. {{1}}One difference: in the E-U, the Montreal liability rules cover
+      E-U airlines on every flight, even domestic ones.
+    data:
+      variant: easa
+      big: "EASA / UK CAA"
+      bigCue: 0
+      lines: ["Same conventions in the exam", "EU: Montreal rules on *all* EU-carrier flights"]
+      lineCues: [0, 1]
+
+  # ───────────────────────── QUIZ + RECAP
+  - id: quiz1
+    type: quiz
+    say: >-
+      Quick check. {{0}}A passenger becomes violent in cruise. Which treaty gives the commander power to restrain him?
+      {{1}}Think. [[pause 3]] {{2}}Tokyo, {1963.|nineteen sixty-three.}
+    data:
+      kicker: Quick check
+      n: 1
+      of: 3
+      q: "Commander's power to *restrain* an unruly passenger comes from…"
+      options: ["The Hague 1970", "Tokyo 1963", "Warsaw 1929", "Rome 1952"]
+      answer: 1
+      explain: "Tokyo 1963: restrain, disembark, deliver"
+
+  - id: quiz2
+    type: quiz
+    say: >-
+      {{0}}An aircraft part falls onto a farmhouse. Which convention? {{1}}Lock it in. [[pause 3]] {{2}}Rome, {1952:|nineteen
+      fifty-two:} third parties on the surface.
+    data:
+      kicker: Quick check
+      n: 2
+      of: 3
+      q: "Damage to *third parties on the surface* is covered by…"
+      options: ["Montreal 1999", "Chicago 1944", "Rome 1952", "Cape Town 2001"]
+      answer: 2
+      explain: "Rome 1952: damage by foreign aircraft on the ground"
+
+  - id: quiz3
+    type: quiz
+    say: >-
+      {{0}}Last one. Which treaty replaced the Warsaw system? {{1}}Think. [[pause 3]] {{2}}The Montreal Convention of
+      {1999.|nineteen ninety-nine.}
+    data:
+      kicker: Quick check
+      n: 3
+      of: 3
+      q: "The Warsaw system was *replaced* by…"
+      options: ["Montreal 1971", "Montreal 1999", "The Hague 1955", "Beijing 2010"]
+      answer: 1
+      explain: "Montreal 1999 · in force 4 Nov 2003 · India 2009"
+
+  - id: recap
+    type: recap
+    say: >-
+      Recap. {{0}}Paris {1919:|nineteen nineteen:} the first, with ICAN. {{1}}Warsaw, then Montreal ninety-nine: who pays.
+      {{2}}Rome: damage on the ground. {{3}}Tokyo, Hague, Montreal seventy-one, Beijing: trouble, hijack, bomb, weapon.
+      {{4}}Cape Town: leased aircraft, in Indian law since {2025.|twenty twenty-five.}
+    data:
+      kicker: Recap
+      title: What you learned today
+      items:
+        - "Paris 1919: sovereignty · ICAN"
+        - "Warsaw 1929 → *Montreal 1999*: carrier liability"
+        - "Rome 1952: damage *on the ground*"
+        - "Tokyo · Hague · Montreal 71 · Beijing = *T-H-B-W*"
+        - "Cape Town 2001: aircraft finance · Indian Act 2025"
+
+  - id: outro
+    type: outro
+    say: >-
+      Next episode: ICAO in depth, and the other bodies you'll meet, from IATA to EASA. A new lesson every day at ten
+      fifteen in the morning. {{0}}Subscribe, and I'll see you tomorrow.
+    data:
+      next: "ICAO in Depth & Other Aviation Bodies"
+      nextSub: "Episode 5 · tomorrow, 10:15 AM IST"
+      cta: Subscribe
+
+reel:
+  title: "Hijack, bomb or lost bag: which treaty? #DGCA #aviation"
+  caption: |
+    Hijacking, a bomb, a lost bag: each has its own air law treaty ✈️ Learn the four security conventions in 30 seconds.
+    Full lesson on YouTube: Runway To Cockpit · Air Regulations Ep 4
+    #DGCA #pilottraining #aviation #CPL #airregulations #aviationlaw
+  scenes:
+    - type: rhook
+      say: >-
+        Hijacking, a bomb, a lost bag. {{0}}Which treaty is which?
+      data:
+        lines: ["Hijack, bomb, lost bag:", "*which treaty?*"]
+    - type: rpoints
+      say: >-
+        {{0}}Trouble on board: Tokyo. {{1}}Hijacking: The Hague. {{2}}A bomb: Montreal seventy-one.
+      data:
+        items: ["Trouble on board → *Tokyo 1963*", "Hijack → *Hague 1970*", "Bomb → *Montreal 1971*"]
+    - type: rquote
+      say: >-
+        {{0}}Aircraft used as a weapon: Beijing. And your lost bag? Montreal ninety-nine.
+      data:
+        text: "Aircraft as a weapon: Beijing 2010. Lost bag: Montreal 1999."
+        source: "ICAO air law treaties"
+    - type: rtip
+      say: >-
+        {{0}}DGCA exam: Hague starts with H, like hijack.
+      data:
+        text: "DGCA exam: *H*ague = *H*ijack"
+    - type: rend
+      say: >-
+        Full lesson on the channel.
+      data: {}
+
+posts:
+  - variant: tip
+    caption: |
+      📌 Don't mix them up: the Hague Protocol 1955 is NOT the hijacking treaty. It amended Warsaw and doubled the liability limit. Hijacking = The Hague 1970.
+
+      Full lesson: YouTube @runwaytocockpit · Air Regulations Ep 4
+      #DGCA #CPL #ATPL #airregulations #pilottraining #studentpilot #aviationlaw
+    data:
+      kind: trap
+      title: "Hague *1955* ≠ Hague *1970*"
+      sub: "Same city, different problems"
+      lines:
+        - "*1955* Protocol: amended Warsaw, limit doubled"
+        - "*1970* Convention: hijacking"
+        - "Daily lessons at 10:15 AM"
+  - variant: quiz
+    caption: |
+      🧠 A passenger turns violent at cruise. Which treaty lets the captain restrain him? Answer before you swipe 👉
+
+      Daily DGCA lessons at 10:15 AM · @runwaytocockpit
+      #DGCA #CPL #aviationquiz #airregulations #studentpilot
+    data:
+      q: "The commander's power to *restrain* an unruly passenger comes from…"
+      options: ["The Hague 1970", "Tokyo 1963", "Warsaw 1929", "Rome 1952"]
+      answer: 1
+      explain: "Tokyo 1963: the commander may restrain, disembark or deliver a person to the authorities."
+  - variant: sheet
+    caption: |
+      📋 Save this: every air law convention DGCA asks, sorted by the problem it solves.
+
+      Full lesson: YouTube @runwaytocockpit · Air Regulations Ep 4
+      #DGCA #CPL #ATPL #airregulations #ICAO #cheatsheet
+    data:
+      title: "Air law conventions: *cheat sheet*"
+      items:
+        - {icon: globe, t: "Paris 1919: sovereignty · ICAN"}
+        - {icon: scale, t: "Warsaw 1929 → Montreal 1999", sub: "carrier liability · India 2009"}
+        - {icon: alert, t: "Rome 1952: damage on the ground"}
+        - {icon: users, t: "Tokyo 1963: acts on board", sub: "commander's powers"}
+        - {icon: shield, t: "Hague 1970 hijack · Montreal 1971 sabotage"}
+        - {icon: security, t: "Beijing 2010: aircraft as weapon"}
+        - {icon: doc, t: "Cape Town 2001: aircraft finance", sub: "Indian Act in force 1 May 2025"}

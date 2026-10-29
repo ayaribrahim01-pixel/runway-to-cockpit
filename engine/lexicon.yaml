@@ -1,0 +1,74 @@
+# Pronunciation dictionary: word (as written in scripts) -> IPA for the voice model.
+# Only characters from the model's phoneme vocabulary are allowed (checked at start-up).
+# All-caps acronyms NOT listed here are spelled out letter by letter automatically (DGCA -> D-G-C-A).
+# Acronyms that are spoken as a word go here.
+
+# --- acronyms spoken as words ---
+ICAO: aɪkˈeɪoʊ
+PICAO: pˌiːaɪkˈeɪoʊ
+NOTAM: nˈoʊtæm
+NOTAMs: nˈoʊtæmz
+SARPs: sˈɑːɹps
+SARP: sˈɑːɹp
+IATA: aɪˈɑːtə
+METAR: mˈiːtɑːɹ
+METARs: mˈiːtɑːɹz
+TAF: tˈæf
+TAFs: tˈæfs
+SIGMET: sˈɪɡmɛt
+AIRMET: ˈɛɹmɛt
+AIRAC: ˈɛɹæk
+RNAV: ˈɑːɹnæv
+PANS: pˈænz
+EASA: ˈiːsə
+NASA: nˈæsə
+UNESCO: juːnˈɛskoʊ
+SOLAS: sˈoʊləs
+QNH: kjˌuːˌɛnˈeɪtʃ
+QFE: kjˌuːˌɛfˈiː
+QNE: kjˌuːˌɛnˈiː
+LOFT: lˈɔft
+TCAS: tˈiːkæs
+ACAS: ˈeɪkæs
+CAVOK: kˈævoʊkˈeɪ
+MoCA: mˈoʊkə
+eGCA: ˌiːdʒˌiːsˌiːˈeɪ
+Wi-Fi: wˈaɪfaɪ
+PAPI: pˈæpi
+SAARC: sˈɑːɹk
+
+# --- Indian words and names ---
+Bharatiya: bʰˈɑːɾətiːjə
+Vayuyan: ʋˈɑːjʊjˌɑːn
+Adhiniyam: ˌʌdʰɪnˈɪjəm
+Niyam: nˈɪjəm
+Vidheyak: ʋɪdʰˈeːjək
+Pariksha: pəɾˈiːkʃɑː
+Safdarjung: sˈʌfdəɹdʒʌŋ
+Kanishka: kˈənɪʃkə
+Kerala: kˈeɪɾələ
+Kochi: kˈoʊtʃi
+Thiruvananthapuram: tˌɪɾʊʋənˈʌntəpʊɾəm
+Ahmedabad: ˈɑːmədəbˌɑːd
+Bengaluru: bˈɛŋɡəlʊɾuː
+Chennai: tʃˈɛnaɪ
+Kolkata: koʊlkˈɑːtə
+Mumbai: mʊmbˈaɪ
+Delhi: dˈɛli
+Nagpur: nˈɑːɡpʊɹ
+Guwahati: ɡuːwˈɑːhəti
+Udaan: ʊdˈɑːn
+Lok: lˈoːk
+Sabha: sˈʌbʰɑː
+Rajya: ɾˈɑːdʒjə
+
+# --- aviation words the voice gets wrong ---
+aerodrome: ˈɛɹədɹˌoʊm
+aerodromes: ˈɛɹədɹˌoʊmz
+Aerodrome: ˈɛɹədɹˌoʊm
+Aerodromes: ˈɛɹədɹˌoʊmz
+Annex: ˈænɛks
+annex: ˈænɛks
+cabotage: kˈæbətɑːʒ
+Cabotage: kˈæbətɑːʒ
+squawk: skwˈɔːk

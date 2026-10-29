@@ -1,0 +1,643 @@
+# Air Regulations · Episode 2 (v2 style) — Chicago Convention: the Articles DGCA Asks
+# Narration markup: {{n}} = visual cue, [[pause s]] = silence, {shown|spoken}, *word* = emphasis.
+
+series: air-regulations
+series_name: Air Regulations
+series_short: Air Regs
+code: AR-002
+episode: 2
+style: v2
+title: "Chicago Convention: the Articles DGCA Asks"
+subtitle: "State aircraft, cabotage, the 7 documents and the fine print"
+intro_chapter: The articles that keep coming back
+playlist: Air Regulations — DGCA CPL/ATPL
+next:
+  title: "Freedoms of the Air"
+
+sources:
+  - "Convention on International Civil Aviation (Chicago Convention), ICAO Doc 7300, Articles 3, 3 bis, 5–9, 16–20, 25, 26, 29–36, 83 bis, 90, 96"
+  - "Protocol introducing Article 3 bis (Montréal, 10 May 1984), in force 1 October 1998"
+  - "Protocol introducing Article 83 bis (Montréal, 6 October 1980), in force 20 June 1997"
+  - "Original 1944 text: UN Treaty Series Vol. 15, No. 102 (treaties.un.org)"
+  - "ICAO Legal Bureau, current lists of parties: Article 3 bis and Article 83 bis protocols (checked 26 Oct 2026)"
+
+youtube:
+  title: "Chicago Convention Articles for DGCA: Cabotage, State Aircraft, Article 29 Documents | Air Regulations Ep 2"
+  description: |
+    The Chicago Convention articles that DGCA asks again and again: state vs civil aircraft (Art 3), the ban on using weapons against civil aircraft (Art 3 bis), scheduled vs non-scheduled flights (Arts 5 & 6), cabotage (Art 7), drones (Art 8), prohibited areas (Art 9), nationality and registration (Arts 17–20), the seven documents every aircraft must carry (Art 29), licences and certificates (Arts 30–33), and the fine print: Arts 16, 25, 26, 35, 36, 83 bis, 90 and 96.
+  key_facts:
+    - "Art 3: Convention applies to civil aircraft only; military, customs and police aircraft are state aircraft"
+    - "Art 3 bis: no weapons against civil aircraft in flight (adopted 1984, in force 1 Oct 1998)"
+    - "Art 5: non-scheduled flights may overfly / make non-traffic stops without prior permission; Art 6: scheduled services need permission"
+    - "Art 7: cabotage, a State may refuse foreign carriers domestic traffic"
+    - "Art 8: pilotless aircraft need special authorization"
+    - "Art 17: aircraft have the nationality of the State of registry; Art 18: no dual registration"
+    - "Art 29: 7 documents (registration, airworthiness, crew licences, journey log, radio licence, passenger list, cargo manifest)"
+    - "Art 32(b): a State may refuse to recognize licences granted to its own nationals by another State"
+    - "Art 83 bis: transfer of functions from the State of registry to the State of the operator (in force 20 June 1997)"
+    - "Art 90: Annexes adopted by two-thirds of the Council; effective after 3 months unless a majority of States disapprove"
+  tags: [DGCA, Air Regulations, Chicago Convention articles, cabotage, Article 29, CPL, ATPL, ICAO, aviation law, pilot training India]
+  hashtags: ["#DGCA", "#AirRegulations", "#CPL", "#PilotTraining", "#ICAO", "#Aviation"]
+
+thumbnail:
+  line1: The articles
+  line2: DGCA asks
+  badge: AIR REGS · EP 02
+  kicker: Chicago Convention · Exam focus
+  markers:
+    - {lat: 28.61, lon: 77.21}
+    - {lat: 19.08, lon: 72.88}
+  arcs:
+    - {from: [77.21, 28.61], to: [72.88, 19.08]}
+  rotate: [72, 22]
+
+scenes:
+  # ───────────────────────── HOOK
+  - id: hook
+    type: kinetic
+    say: >-
+      The Chicago Convention has ninety-six articles. {{0}}You don't need all of them. {{1}}You need about twenty —
+      {{2}}the ones DGCA keeps asking, year after year.
+    data:
+      kicker: Exam focus
+      mode: replace
+      lines:
+        - {t: "*96* articles?", cue: 0}
+        - {t: "You need about *20*.", cue: 1}
+        - {t: "The ones DGCA *keeps asking*.", cue: 2}
+
+  - id: title
+    type: title3d
+    say: >-
+      Air Regulations, episode two. {{0}}The Chicago Convention articles DGCA asks.
+    data:
+      title: "The Articles *DGCA* Asks"
+      sub: "State aircraft, cabotage, the 7 documents & the fine print"
+      shot: cruise
+      view: orbit
+
+  # ───────────────────────── CHAPTER 1
+  - id: ch1
+    type: chapter
+    say: >-
+      Chapter one. {{0}}Who may fly where.
+    data:
+      n: 1
+      title: "Who may fly *where*"
+
+  - id: art3
+    type: whiteboard
+    say: >-
+      Article Three draws the first line. {{0}}The Convention applies to civil aircraft only. {{1}}Aircraft used in
+      military, customs and police services are State aircraft — {{2}}and a State aircraft may not fly over or land in
+      another country without special permission.
+    data:
+      kicker: Article 3
+      title: "Civil vs *State* aircraft"
+      nodes:
+        - {id: civ, label: "Civil aircraft", sub: "the Convention applies", x: 160, y: 300, w: 520, h: 140, cue: 0, color: "#15803D"}
+        - {id: sta, label: "State aircraft", sub: "outside the Convention", x: 1060, y: 300, w: 520, h: 140, cue: 1, color: "#D9363E"}
+        - {id: mil, label: "Military", x: 900, y: 560, w: 250, h: 100, cue: 1}
+        - {id: cus, label: "Customs", x: 1190, y: 560, w: 250, h: 100, cue: 1}
+        - {id: pol, label: "Police", x: 1480, y: 560, w: 250, h: 100, cue: 1}
+      edges:
+        - {from: sta, to: mil, cue: 1}
+        - {from: sta, to: cus, cue: 1}
+        - {from: sta, to: pol, cue: 1}
+      notes:
+        - {x: 900, y: 710, text: "Over another State? Only with *special permission*.", cue: 2, size: 32}
+
+  - id: art3bis
+    type: doc
+    say: >-
+      In {1983,|nineteen eighty-three,} a civilian airliner that had strayed off course was shot down. {{0}}ICAO's answer
+      was Article Three bis: {{1}}States must not use weapons against civil aircraft in flight, {{2}}and an interception
+      must never endanger the lives on board. {{3}}It came into force on {1 October 1998.|the first of October, nineteen
+      ninety-eight.}
+    data:
+      kicker: "Article 3 bis · adopted 1984"
+      title: "No weapons against *civil aircraft*"
+      header: Convention on International Civil Aviation
+      headerSub: "Article 3 bis · Protocol of 10 May 1984"
+      lines:
+        - "# Article 3 bis"
+        - "Every State must refrain from resorting to the"
+        - "use of weapons against civil aircraft in flight"
+        - "and, in case of interception, the lives of persons"
+        - "on board and the safety of aircraft must not"
+        - "be endangered."
+      hl: {line: 2, cue: 1}
+      zoom: {cue: 1, scale: 1.3}
+      stamp: {text: "In force · 1 Oct 1998", cue: 3}
+
+  - id: art5-6
+    type: compare
+    say: >-
+      Now, permission to fly in. {{0}}Article Five: a non-scheduled flight — say a charter or a private jet — may overfly a
+      country, or stop for fuel, without asking first. {{1}}Article Six: a scheduled international air service needs the
+      country's permission. Always.
+    data:
+      kicker: "Articles 5 & 6"
+      title: "Non-scheduled vs scheduled"
+      left:
+        head: "Art. 5 · Non-scheduled"
+        chip: NO PRIOR PERMISSION
+        items: ["Overfly without landing", "Stop for non-traffic purposes", "State may still require a landing"]
+      right:
+        head: "Art. 6 · Scheduled"
+        chip: PERMISSION NEEDED
+        items: ["Special permission or authorization", "Usually via a bilateral agreement", "No permission, no service"]
+
+  - id: cabotage
+    type: globe
+    say: >-
+      {{0}}Article Seven is cabotage. Picture a foreign airline flying Dubai to Delhi. {{1}}Fine — with a bilateral
+      agreement. {{2}}But picking up passengers in Delhi and selling them seats to Mumbai? {{3}}That's domestic traffic,
+      and India can refuse it.
+    data:
+      kicker: Article 7 · Cabotage
+      title: "Domestic traffic stays *domestic*"
+      notes:
+        - {icon: route, text: "Dubai → Delhi", sub: "international: allowed with a bilateral", cue: 1}
+        - {icon: x, text: "Delhi → Mumbai", sub: "cabotage: India may refuse", cue: 3}
+      globe:
+        start: {lon: 66, lat: 22}
+        focus:
+          - {cue: 2, lon: 75, lat: 22}
+        markers:
+          - {lat: 25.25, lon: 55.36, label: "Dubai", cue: 0, labelPos: l}
+          - {lat: 28.61, lon: 77.21, label: "Delhi", cue: 1, big: true}
+          - {lat: 19.08, lon: 72.88, label: "Mumbai", cue: 2, labelPos: bl}
+        arcs:
+          - {from: Dubai, to: Delhi, cue: 1, dur: 40}
+          - {from: Delhi, to: Mumbai, cue: 2, dur: 34, color: sky}
+
+  - id: trap-cabotage
+    type: examtip
+    say: >-
+      {{0}}Exam trap: Article Seven gives each State the right to refuse cabotage. {{1}}It also says a State must not grant
+      cabotage to one foreign country on an exclusive basis.
+    data:
+      variant: trap
+      q: "Cabotage under Article 7 means…"
+      wrong: "Any flight over a foreign State"
+      wrongCue: 0
+      right: "Carrying traffic between two points in one State"
+      rightCue: 0
+      sub: "A State may refuse it, and must not grant it to one foreign State *exclusively*"
+      subCue: 1
+
+  - id: remember567
+    type: examtip
+    say: >-
+      {{0}}Remember five, six, seven in order: {{1}}five, the charter comes in free. {{2}}Six, the scheduled airline asks
+      permission. {{3}}Seven, home traffic stays at home.
+    data:
+      variant: remember
+      big: "5 · 6 · 7"
+      bigCue: 0
+      lines: ["Art. 5 → the *charter* comes in free", "Art. 6 → the *schedule* asks permission", "Art. 7 → *home* traffic stays home"]
+      lineCues: [1, 2, 3]
+
+  - id: art8
+    type: kinetic
+    say: >-
+      {{0}}Here's a surprise: drones are in a treaty from {1944.|nineteen forty-four.} {{1}}Article Eight: an aircraft
+      that can fly without a pilot needs special authorization to fly over another State.
+    data:
+      tone: sky
+      mode: stack
+      kicker: Article 8 · Pilotless aircraft
+      lines:
+        - {t: "Drones in a *1944* treaty?", cue: 0}
+        - {t: "No pilot? *Special authorization.*", cue: 1}
+
+  - id: art9
+    type: whiteboard
+    say: >-
+      {{0}}Article Nine lets a State close some of its sky — for military need or public safety. {{1}}You'll meet three
+      kinds of area on charts. {{2}}Prohibited: no flying at all. {{3}}Restricted: flying only under set conditions.
+      {{4}}Danger: activities dangerous to aircraft may exist at certain times.
+    data:
+      kicker: Article 9 · and Annex 2 definitions
+      title: "P · R · D areas"
+      nodes:
+        - {id: p, label: "P · Prohibited", sub: "no flight at all", x: 150, y: 360, w: 500, h: 150, cue: 2, color: "#D9363E"}
+        - {id: r, label: "R · Restricted", sub: "only under specified conditions", x: 710, y: 360, w: 500, h: 150, cue: 3, color: "#C98800"}
+        - {id: d, label: "D · Danger", sub: "hazards may exist at times", x: 1270, y: 360, w: 500, h: 150, cue: 4, color: "#1F6FB2"}
+      notes:
+        - {x: 150, y: 600, text: "Closed for *military need* or *public safety*: uniform for all foreign aircraft", cue: 0, size: 32}
+
+  - id: arrival
+    type: split
+    say: >-
+      So you've been allowed in. What happens when you land? {{0}}Article Ten: if the State requires it, you land first at
+      a designated customs airport. {{1}}Article Eleven: the country's rules on arrival and departure apply to every
+      aircraft equally, whatever its flag. {{2}}And Article Thirteen: passengers, crew and cargo must meet its entry rules
+      — immigration, passports, customs and quarantine.
+    data:
+      visual: {shot: takeoff, view: head-on}
+      side: right
+      tag: "Arriving in a foreign State"
+      kicker: "Articles 10, 11 & 13"
+      title: "Landing in *another* country"
+      items:
+        - {icon: airport, t: "Art. 10: land at a *customs airport*"}
+        - {icon: scale, t: "Art. 11: same rules for *every* flag"}
+        - {icon: id, t: "Art. 13: entry, passports, customs, quarantine"}
+
+  - id: art15
+    type: examtip
+    say: >-
+      {{0}}Key point on money: Article Fifteen. {{1}}Airport charges for foreign aircraft can't be higher than those paid
+      by the country's own aircraft on similar international services. {{2}}And no State may charge just for the right to
+      fly over or into its territory.
+    data:
+      variant: key
+      big: "Art. 15 · *Airport charges*"
+      bigCue: 0
+      lines: ["Foreign aircraft pay *no more* than national ones", "No fee *only* for transit, entry or exit"]
+      lineCues: [1, 2]
+
+  # ───────────────────────── CHAPTER 2
+  - id: ch2
+    type: chapter
+    say: >-
+      Chapter two. {{0}}Aircraft and their papers.
+    data:
+      n: 2
+      title: "Aircraft & their *papers*"
+      bg3d: {shot: takeoff, view: spotter, shift: 0.3}
+
+  - id: nationality
+    type: doc
+    say: >-
+      {{0}}Article Seventeen: an aircraft has the nationality of the State where it's registered. {{1}}Article Eighteen:
+      it can't be registered in two States at once. {{2}}And Article Twenty: it must carry its nationality and
+      registration marks — for India, {VT.|V-T.}
+    data:
+      kicker: "Articles 17–20"
+      title: "One aircraft, *one* nationality"
+      header: Convention on International Civil Aviation
+      headerSub: "Chapter III · Nationality of Aircraft"
+      lines:
+        - "# Article 17 · Nationality"
+        - "Aircraft have the nationality of the State"
+        - "in which they are registered."
+        - "# Article 18 · Dual registration"
+        - "An aircraft cannot be validly registered"
+        - "in more than one State."
+        - "# Article 20 · Display of marks"
+      hl: {line: 1, cue: 0}
+      zoom: {cue: 1, scale: 1.18}
+      stamp: {text: "VT-", cue: 2}
+
+  - id: art29
+    type: grid
+    say: >-
+      Article Twenty-Nine is the most asked article of all: the documents every aircraft on an international flight must
+      carry. {{0}}Seven of them. {{1}}The certificate of registration. {{2}}The certificate of airworthiness. {{3}}The crew
+      licences. {{4}}The journey log book. {{5}}The radio station licence. {{6}}The passenger list. {{7}}And the cargo
+      manifest.
+    data:
+      kicker: "Article 29 · the 7 documents"
+      cols: 4
+      groupCue: [0, 0, 0, 0, 0, 0, 0]
+      spotlight: [[1, 0], [2, 1], [3, 2], [4, 3], [5, 4], [6, 5], [7, 6]]
+      tiles:
+        - {n: 1, label: "Certificate of Registration"}
+        - {n: 2, label: "Certificate of Airworthiness"}
+        - {n: 3, label: "Crew Licences"}
+        - {n: 4, label: "Journey Log Book"}
+        - {n: 5, label: "Radio Station Licence"}
+        - {n: 6, label: "Passenger List"}
+        - {n: 7, label: "Cargo Manifest"}
+
+  - id: remember29
+    type: examtip
+    say: >-
+      {{0}}Here's how to never forget them: {{1}}Really All Licences Just Require Paper Copies. {{2}}Registration,
+      Airworthiness, Licences, Journey log, Radio licence, Passenger list, Cargo manifest.
+    data:
+      variant: remember
+      big: "*R*eally *A*ll *L*icences *J*ust *R*equire *P*aper *C*opies"
+      bigSize: 64
+      bigCue: 1
+      lines: ["Registration · Airworthiness · Licences · Journey log", "Radio licence · Passenger list · Cargo manifest"]
+      lineCues: [2, 2]
+
+  - id: art30-33
+    type: ladder
+    say: >-
+      Then four articles that work as a set. {{0}}Article Thirty: radio equipment needs a licence from the State of
+      registry. {{1}}Thirty-one: the certificate of airworthiness is issued or validated by the State of registry.
+      {{2}}Thirty-two: so are the crew licences. {{3}}And Thirty-three: other States must recognise them — if they meet
+      ICAO's minimum standards.
+    data:
+      kicker: "Articles 30–33"
+      title: "The State of *registry* signs off"
+      axis: "State of registry"
+      tiers:
+        - {label: "Art. 30 · Radio equipment licence", who: "State of registry"}
+        - {label: "Art. 31 · Certificate of airworthiness", who: "State of registry"}
+        - {label: "Art. 32 · Crew licences", who: "State of registry"}
+        - {label: "Art. 33 · Recognition by other States", who: "if ≥ ICAO minimum"}
+
+  - id: trap32
+    type: examtip
+    say: >-
+      {{0}}Now the fine print in Article Thirty-Two that catches people out. {{1}}A State may refuse to recognise — for
+      flights over its own territory — a licence that another State has given to one of its own nationals.
+    data:
+      variant: trap
+      q: "Indian citizen, foreign licence, flying over India: must India accept it?"
+      wrong: "Yes, always"
+      wrongCue: 0
+      right: "No: Art. 32(b) lets India refuse"
+      rightCue: 1
+      sub: "Applies to its *own nationals* licensed abroad, for flights over its *own territory*"
+      subCue: 1
+
+  # ───────────────────────── CHAPTER 3
+  - id: ch3
+    type: chapter
+    say: >-
+      Chapter three. {{0}}The fine print examiners love.
+    data:
+      n: 3
+      title: "The fine print examiners *love*"
+
+  - id: quickfire
+    type: grid
+    say: >-
+      Quick-fire round. {{0}}Article Sixteen: authorities may search a foreign aircraft on landing or departure.
+      {{1}}Twenty-five: help aircraft in distress. {{2}}Twenty-six: the State where an accident happens investigates.
+      {{3}}Thirty-five: no munitions of war without permission. {{4}}Thirty-six: a State may ban cameras over its
+      territory.
+    data:
+      kicker: Quick-fire articles
+      cols: 5
+      groupCue: [0, 1, 2, 3, 4]
+      spotlight: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]]
+      tiles:
+        - {n: 16, label: "Search of aircraft"}
+        - {n: 25, label: "Aircraft in distress"}
+        - {n: 26, label: "Accident investigation"}
+        - {n: 35, label: "Cargo restrictions"}
+        - {n: 36, label: "Photographic apparatus"}
+
+  - id: quickfire2
+    type: grid
+    say: >-
+      Round two. {{0}}Article Twenty-two: States must speed up clearance of aircraft. {{1}}Twenty-four: fuel, oil and
+      spares that stay on board are free of customs duty. {{2}}Thirty-four: every aircraft keeps a journey log book.
+      {{3}}Thirty-nine: a licence or certificate that falls short of the standard must be endorsed with the differences.
+      {{4}}And Forty: with such an endorsement, you need permission to fly over other States.
+    data:
+      kicker: Quick-fire · round two
+      cols: 5
+      groupCue: [0, 1, 2, 3, 4]
+      spotlight: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4]]
+      tiles:
+        - {n: 22, label: "Facilitation"}
+        - {n: 24, label: "Customs duty"}
+        - {n: 34, label: "Journey log book"}
+        - {n: 39, label: "Endorsed certificates"}
+        - {n: 40, label: "Validity of endorsements"}
+
+  - id: art83bis
+    type: examtip
+    say: >-
+      {{0}}Key point: Article Eighty-three bis. {{1}}When an aircraft registered in one State is leased to an operator in
+      another, the State of registry can transfer some of its duties to the State of the operator. {{2}}In force since {20
+      June 1997.|the twentieth of June, nineteen ninety-seven.}
+    data:
+      variant: key
+      big: "Art. 83 bis = *transfer* of functions"
+      bigCue: 0
+      lines: ["State of *registry* → State of the *operator*", "Leased aircraft · by agreement", "In force 20 June 1997"]
+      lineCues: [1, 1, 2]
+
+  - id: art90
+    type: count
+    say: >-
+      {{0}}Article Ninety: how an Annex is born. {{1}}Two-thirds of the Council must vote for it. Then States get three
+      months — and it takes effect unless a majority of them disapprove.
+    data:
+      kicker: "Article 90 · adopting an Annex"
+      value: 3
+      cue: 1
+      countFrames: 30
+      suffix: " months"
+      size: 220
+      label: "after a *⅔ Council* vote"
+      sub: "Then it takes effect, unless a *majority of States* disapprove"
+
+  - id: art96
+    type: doc
+    say: >-
+      {{0}}And Article Ninety-six, the definitions. {{1}}An air service is a scheduled service carrying passengers, mail or
+      cargo for the public. {{2}}International means it crosses the airspace of more than one State. {{3}}And a stop for
+      non-traffic purposes is any landing that doesn't load or unload traffic — like a fuel stop.
+    data:
+      kicker: Article 96 · Definitions
+      title: "Words the exam *defines*"
+      side: left
+      header: Convention on International Civil Aviation
+      headerSub: "Article 96 · Definitions"
+      lines:
+        - "# Air service"
+        - "Scheduled service for the public transport of"
+        - "passengers, mail or cargo."
+        - "# International air service"
+        - "Passes through the airspace over more than one State."
+        - "# Stop for non-traffic purposes"
+        - "A landing other than to take on or discharge traffic."
+      hl: {line: 6, cue: 3}
+      zoom: {cue: 3, scale: 1.2}
+
+  # ───────────────────────── CHAPTER 4
+  - id: ch4
+    type: chapter
+    say: >-
+      Chapter four. {{0}}The articles about ICAO itself.
+    data:
+      n: 4
+      title: "The articles about *ICAO itself*"
+      bg3d: {shot: cruise, view: chase, shift: 0.3}
+
+  - id: icao-articles
+    type: ladder
+    say: >-
+      Part Two of the Convention builds ICAO. {{0}}Article Forty-three: ICAO is made of an Assembly, a Council and other
+      bodies. {{1}}Forty-four: its aims — safe, orderly growth of international civil aviation. {{2}}Forty-five: a
+      permanent seat, which is Montreal. {{3}}Forty-eight: the Assembly meets at least once every three years. {{4}}And
+      Fifty: the Assembly elects the Council.
+    data:
+      kicker: "Part II · the Organization"
+      title: "ICAO's own *articles*"
+      axis: "Chicago Convention, Part II"
+      tiers:
+        - {label: "Art. 43 · Assembly, Council + other bodies", who: "structure"}
+        - {label: "Art. 44 · Safe, orderly development", who: "objectives"}
+        - {label: "Art. 45 · Permanent seat: Montréal", who: "seat"}
+        - {label: "Art. 48 · Assembly at least every 3 years", who: "Assembly"}
+        - {label: "Art. 50 · Council elected by the Assembly", who: "Council"}
+
+  - id: art94-95
+    type: examtip
+    say: >-
+      {{0}}Exam favourite: changing the treaty itself. {{1}}Article Ninety-four: an amendment needs a two-thirds vote of
+      the Assembly, then enough ratifications to come into force. {{2}}And Article Ninety-five: a State can leave the
+      Convention — it takes effect one year after it gives notice.
+    data:
+      variant: exam
+      big: "Amend vs *leave*"
+      bigCue: 0
+      lines: ["Art. 94: *⅔ of the Assembly* + ratification", "Art. 95: denunciation effective *1 year* after notice"]
+      lineCues: [1, 2]
+
+  # ───────────────────────── QUIZ + RECAP
+  - id: quiz1
+    type: quiz
+    say: >-
+      Quick check. {{0}}A customs aircraft — civil or State? {{1}}Think. [[pause 3]] {{2}}State aircraft. Military,
+      customs and police are all State aircraft under Article Three.
+    data:
+      kicker: Quick check
+      n: 1
+      of: 3
+      q: "Under Article 3, an aircraft used in *customs* services is…"
+      options: ["A civil aircraft", "A State aircraft", "A private aircraft", "Not covered at all"]
+      answer: 1
+      explain: "Military, customs and police services → State aircraft"
+
+  - id: quiz2
+    type: quiz
+    say: >-
+      {{0}}How many documents does Article Twenty-nine list? {{1}}Count them. [[pause 3]] {{2}}Seven. Really All Licences
+      Just Require Paper Copies.
+    data:
+      kicker: Quick check
+      n: 2
+      of: 3
+      q: "How many documents must be carried under *Article 29*?"
+      options: ["5", "6", "7", "9"]
+      answer: 2
+      explain: "Registration · Airworthiness · Licences · Journey log · Radio · Passengers · Cargo"
+
+  - id: quiz3
+    type: quiz
+    say: >-
+      {{0}}Last one: which article covers cabotage? {{1}}Lock it in. [[pause 3]] {{2}}Article Seven.
+    data:
+      kicker: Quick check
+      n: 3
+      of: 3
+      q: "Which article deals with *cabotage*?"
+      options: ["Article 5", "Article 6", "Article 7", "Article 9"]
+      answer: 2
+      explain: "Art. 5 non-scheduled · Art. 6 scheduled · Art. 9 prohibited areas"
+
+  - id: recap
+    type: recap
+    say: >-
+      Recap. {{0}}Article Three: civil only; military, customs and police are State aircraft. {{1}}Five and six:
+      non-scheduled may come in, scheduled needs permission. {{2}}Seven: cabotage. {{3}}Twenty-nine: seven documents.
+      {{4}}And ninety: two-thirds of the Council, three months.
+    data:
+      kicker: Recap
+      title: What you learned today
+      items:
+        - "Art. 3: civil only · military, customs, police = State aircraft"
+        - "Art. 5 non-scheduled · Art. 6 scheduled needs *permission*"
+        - "Art. 7: *cabotage* can be refused"
+        - "Art. 29: *7 documents* (R-A-L-J-R-P-C)"
+        - "Art. 90: ⅔ Council · 3 months · majority can block"
+
+  - id: outro
+    type: outro
+    say: >-
+      Next episode: the freedoms of the air — from the first freedom to the ninth, with one picture you'll never forget.
+      {{0}}Subscribe, and I'll see you tomorrow at ten fifteen.
+    data:
+      next: "Freedoms of the Air"
+      nextSub: "Episode 3 · tomorrow, 10:15 AM IST"
+      cta: Subscribe
+
+reel:
+  title: "Why can't Emirates fly you Delhi to Mumbai? #DGCA #aviation"
+  caption: |
+    Why can't a foreign airline sell you a Delhi → Mumbai ticket? ✈️ It's called cabotage: Article 7 of the Chicago Convention.
+    Full lesson on YouTube: Runway To Cockpit · Air Regulations Ep 2
+    #DGCA #pilottraining #aviation #CPL #airregulations #cabotage
+  scenes:
+    - type: rhook
+      say: >-
+        Why can't a foreign airline fly you from Delhi to Mumbai? {{0}}One word: cabotage.
+      data:
+        lines: ["Why can't a foreign airline", "fly you *Delhi → Mumbai*?"]
+    - type: rpoints
+      say: >-
+        {{0}}Dubai to Delhi? International, allowed. {{1}}Delhi to Mumbai on the same plane? {{2}}That's domestic traffic.
+      data:
+        items: ["Dubai → Delhi: international ✓", "Delhi → Mumbai: domestic", "= *cabotage*"]
+    - type: rquote
+      say: >-
+        {{0}}Article Seven of the Chicago Convention lets every State keep its domestic traffic for its own airlines.
+      data:
+        text: "Each State may refuse foreign aircraft the right to carry domestic traffic for hire."
+        source: "Chicago Convention · Article 7 (paraphrased)"
+    - type: rtip
+      say: >-
+        {{0}}DGCA exam: cabotage equals Article Seven.
+      data:
+        text: "DGCA exam: *cabotage* = Article 7"
+    - type: rend
+      say: >-
+        Full lesson on the channel.
+      data: {}
+
+posts:
+  - variant: tip
+    caption: |
+      📌 The most-asked Chicago Convention article: Article 29, the 7 documents every international flight must carry.
+      Mnemonic: Really All Licences Just Require Paper Copies ✈️
+
+      Full lesson: YouTube @runwaytocockpit · Air Regulations Ep 2
+      #DGCA #CPL #ATPL #airregulations #pilottraining #studentpilot #aviation
+    data:
+      kind: remember
+      title: "Article 29: *7 documents*"
+      sub: "Really All Licences Just Require Paper Copies"
+      lines:
+        - "*R*egistration · *A*irworthiness · *L*icences"
+        - "*J*ourney log · *R*adio licence"
+        - "*P*assenger list · *C*argo manifest"
+  - variant: quiz
+    caption: |
+      🧠 Which Chicago Convention article covers cabotage? Answer before you swipe 👉
+
+      Daily DGCA lessons at 10:15 AM · @runwaytocockpit
+      #DGCA #CPL #aviationquiz #airregulations #studentpilot
+    data:
+      q: "Which article of the Chicago Convention deals with *cabotage*?"
+      options: ["Article 5", "Article 6", "Article 7", "Article 9"]
+      answer: 2
+      explain: "Art. 7: a State may refuse foreign aircraft the carriage of domestic traffic for hire, and must not grant it exclusively."
+  - variant: sheet
+    caption: |
+      📋 Save this: the Chicago Convention articles DGCA asks most.
+
+      Full lesson: YouTube @runwaytocockpit · Air Regulations Ep 2
+      #DGCA #CPL #ATPL #airregulations #ICAO #cheatsheet
+    data:
+      title: "Chicago Convention: *must-know articles*"
+      items:
+        - {icon: shield, t: "Art. 3: State aircraft", sub: "military · customs · police"}
+        - {icon: alert, t: "Art. 3 bis: no weapons vs civil aircraft", sub: "in force 1 Oct 1998"}
+        - {icon: route, t: "Art. 5 non-scheduled · Art. 6 scheduled"}
+        - {icon: x, t: "Art. 7: cabotage"}
+        - {icon: flag, t: "Art. 17–20: nationality & marks", sub: "India: VT"}
+        - {icon: doc, t: "Art. 29: 7 documents"}
+        - {icon: users, t: "Art. 90: ⅔ Council · 3 months"}

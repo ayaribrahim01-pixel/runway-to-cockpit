@@ -1,0 +1,44 @@
+name: Daily Instagram (reel + 3 posts)
+
+# At go-live time (10:15 IST), post today's reel and the day's image posts from the release the evening job created.
+on:
+  schedule:
+    - cron: "45 4 * * *"        # 10:15 IST
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Episode code to post (e.g. AR-001). Default: latest release"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Fetch today's files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CODE="${{ github.event.inputs.code }}"
+          if [ -z "$CODE" ]; then CODE=$(gh release list --limit 1 --json tagName -q '.[0].tagName'); fi
+          if [ -z "$CODE" ]; then echo "nothing to post"; exit 0; fi
+          mkdir -p dl && gh release download "$CODE" -D dl -p "*REEL*.mp4" -p "manifest.json" -p "youtube_result.json" -p "posts.json" || true
+          echo "CODE=$CODE" >> "$GITHUB_ENV"
+          echo "BASE=https://github.com/${{ github.repository }}/releases/download/$CODE/" >> "$GITHUB_ENV"
+      - name: Post reel and image posts
+        if: env.CODE != ''
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.facebook.com' }}
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ] || [ -z "$IG_USER_ID" ]; then echo "Instagram isn't connected yet. Skipping."; exit 0; fi
+          pip install -q requests
+          python upload/instagram_upload.py reel dl/manifest.json
+          if [ -f dl/posts.json ]; then python upload/instagram_upload.py posts dl/posts.json --base-url "$BASE"; fi

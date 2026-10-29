@@ -1,0 +1,44 @@
+name: Daily YouTube analytics (+ apply Claude's title/description updates)
+
+# Every morning: save the channel's numbers to state/analytics/ (Claude's daily review reads them from here),
+# and apply any title / description / thumbnail changes Claude asked for in state/youtube_updates.json.
+on:
+  schedule:
+    - cron: "0 1 * * *"          # 06:30 IST
+  push:
+    paths: ["state/youtube_updates.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analytics
+  cancel-in-progress: false
+
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Fetch numbers and apply updates
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "YouTube isn't connected yet. Skipping."; exit 0; fi
+          pip install -q google-api-python-client google-auth
+          python upload/youtube_update.py || true
+          python engine/analytics.py
+      - name: Save
+        run: |
+          git config user.name "studio-bot"
+          git config user.email "studio-bot@users.noreply.github.com"
+          git add state
+          git commit -m "Analytics $(date -u +%F)" || true
+          git pull --rebase -q || true
+          git push

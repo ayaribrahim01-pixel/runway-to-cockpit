@@ -1,0 +1,553 @@
+# Air Regulations · Episode 3 (v2 style) — Freedoms of the Air
+# Narration markup: {{n}} = visual cue, [[pause s]] = silence, {shown|spoken}, *word* = emphasis.
+
+series: air-regulations
+series_name: Air Regulations
+series_short: Air Regs
+code: AR-003
+episode: 3
+style: v2
+title: Freedoms of the Air
+subtitle: "All nine, the two Chicago agreements, and India's open-skies rule"
+intro_chapter: Why some flights are allowed and others aren't
+playlist: Air Regulations — DGCA CPL/ATPL
+next:
+  title: "Air Law Conventions You Must Know"
+
+sources:
+  - "International Air Services Transit Agreement and International Air Transport Agreement, Chicago, 7 December 1944"
+  - "ICAO Manual on the Regulation of International Air Transport (Doc 9626): freedoms 6–9 described as 'so-called'"
+  - "Chicago Convention Articles 7 (cabotage) and 15 (charges)"
+  - "Ministry of Civil Aviation, National Civil Aviation Policy 2016: open skies (reciprocal) with SAARC and with countries entirely beyond 5,000 km of New Delhi"
+
+youtube:
+  title: "Freedoms of the Air Explained (1st to 9th) with Animations | DGCA Air Regulations Ep 3"
+  description: |
+    All nine freedoms of the air, each one animated on a simple three-country map: overflight, technical stops, 3rd/4th freedom traffic, the 5th freedom "beyond" rights, and the so-called 6th to 9th freedoms including cabotage. Plus the two Chicago agreements (Transit vs Transport), bilateral air services agreements, and India's NCAP 2016 open-skies rule.
+  key_facts:
+    - "1st: overfly · 2nd: land for non-traffic purposes (Transit Agreement = 1st + 2nd)"
+    - "3rd: home → abroad · 4th: abroad → home · 5th: between two foreign States on a service to/from home (Transport Agreement = 1st–5th)"
+    - "6th–9th are 'so-called' freedoms; 8th = consecutive cabotage, 9th = stand-alone cabotage"
+    - "Most traffic rights come from bilateral air services agreements"
+    - "Art 15: no charge solely for the right of transit, entry or exit (air navigation service charges still apply)"
+    - "NCAP 2016: open skies, reciprocal, with SAARC countries and countries entirely beyond 5,000 km of New Delhi"
+  tags: [freedoms of the air, DGCA, air regulations, fifth freedom, cabotage, Chicago Convention, CPL, ATPL, pilot training India, aviation law]
+  hashtags: ["#DGCA", "#AirRegulations", "#FreedomsOfTheAir", "#CPL", "#PilotTraining", "#Aviation"]
+
+thumbnail:
+  line1: 9 freedoms
+  line2: of the air
+  badge: AIR REGS · EP 03
+  kicker: "1st → 9th, animated"
+  markers:
+    - {lat: 19.08, lon: 72.88}
+    - {lat: 25.25, lon: 55.36}
+    - {lat: 51.47, lon: -0.45}
+  arcs:
+    - {from: [72.88, 19.08], to: [55.36, 25.25]}
+    - {from: [55.36, 25.25], to: [-0.45, 51.47]}
+  rotate: [40, 30]
+
+scenes:
+  - id: hook
+    type: kinetic
+    say: >-
+      An Indian airline can fly you from Mumbai to Dubai. {{0}}It can even carry you on, from Dubai to London. {{1}}But a
+      foreign airline can't sell you a seat from Mumbai to Delhi. {{2}}Why? Nine freedoms.
+    data:
+      kicker: Freedoms of the air
+      mode: replace
+      lines:
+        - {t: "Mumbai → Dubai → *London*? ✓", cue: 0}
+        - {t: "Foreign airline, Mumbai → *Delhi*? ✗", cue: 1}
+        - {t: "Why? *Nine freedoms.*", cue: 2}
+
+  - id: title
+    type: title3d
+    say: >-
+      Air Regulations, episode three. {{0}}The freedoms of the air.
+    data:
+      title: "Freedoms of the *Air*"
+      sub: "All nine, animated, plus India's open-skies rule"
+      shot: cruise
+      view: chase
+
+  # ───────────────────────── CHAPTER 1
+  - id: ch1
+    type: chapter
+    say: >-
+      Chapter one. {{0}}Where the freedoms come from.
+    data:
+      n: 1
+      title: "Where the freedoms *come from*"
+
+  - id: agreements
+    type: compare
+    say: >-
+      At Chicago in {1944,|nineteen forty-four,} two side agreements were signed next to the Convention. {{0}}The Transit
+      Agreement covers the first two freedoms — and most States joined it. {{1}}The Transport Agreement went up to five
+      freedoms — but very few States ever accepted it.
+    data:
+      kicker: "Chicago, 1944"
+      title: "Two agreements, two fates"
+      left:
+        head: "Transit Agreement"
+        chip: FREEDOMS 1–2
+        items: ["The \"Two Freedoms\" agreement", "Overfly + technical stop", "*Widely* accepted"]
+      right:
+        head: "Transport Agreement"
+        chip: FREEDOMS 1–5
+        items: ["The \"Five Freedoms\" agreement", "Adds traffic rights 3, 4, 5", "Accepted by *very few* States"]
+
+  - id: bilateral
+    type: examtip
+    say: >-
+      {{0}}Key point: since the Transport Agreement never caught on, {{1}}most traffic rights today come from bilateral
+      air services agreements — one deal between two countries at a time.
+    data:
+      variant: key
+      big: "Traffic rights = *bilateral* deals"
+      bigCue: 0
+      lines: ["Air services agreements, State to State", "They decide who flies where, and how often"]
+      lineCues: [1, 1]
+
+  # ───────────────────────── CHAPTER 2
+  - id: ch2
+    type: chapter
+    say: >-
+      Chapter two. {{0}}The five official freedoms.
+    data:
+      n: 2
+      title: "The five *official* freedoms"
+      bg3d: {shot: cruise, view: top, shift: 0.3}
+
+  - id: f1
+    type: freedom
+    say: >-
+      {{0}}First freedom: fly over a foreign country without landing. {{1}}Your airline just passes through its sky — the way
+      most flights from India to Europe cross several countries without ever touching down.
+    data: {n: 1, cue: 0}
+
+  - id: f2
+    type: freedom
+    say: >-
+      {{0}}Second freedom: land in a foreign country for non-traffic reasons — {{1}}fuel or a repair. Nobody gets on, and
+      nobody gets off. Long-range jets need it less today, but smaller aircraft and delivery flights still use it.
+    data: {n: 2, cue: 0, note: "A *technical stop*: fuel or maintenance only", noteCue: 1}
+
+  - id: charges
+    type: examtip
+    say: >-
+      {{0}}Did you know? Under Article Fifteen, no State may charge you just for crossing its territory. {{1}}But you do
+      pay for the air traffic services you use on the way.
+    data:
+      variant: dyk
+      big: "Crossing ≠ *free* flying"
+      bigCue: 0
+      lines: ["Art. 15: no fee *only* for transit", "Air navigation charges still apply"]
+      lineCues: [0, 1]
+
+  - id: f3
+    type: freedom
+    say: >-
+      {{0}}Third freedom: carry passengers from home to a foreign country. {{1}}An Indian airline flies Mumbai to Dubai and
+      lets its passengers off.
+    data:
+      n: 3
+      cue: 0
+      labels: {A: India, B: UAE, C: UK}
+      cities: {A: Mumbai, B: Dubai, C: London}
+
+  - id: f4
+    type: freedom
+    say: >-
+      {{0}}Fourth freedom: the way back. {{1}}The same airline picks up passengers in Dubai and brings them home to
+      Mumbai.
+    data:
+      n: 4
+      cue: 0
+      labels: {A: India, B: UAE, C: UK}
+      cities: {A: Mumbai, B: Dubai, C: London}
+
+  - id: f5
+    type: freedom
+    say: >-
+      {{0}}Fifth freedom: the "beyond" right. {{1}}Mumbai to Dubai, then on to London — {{2}}selling seats between Dubai
+      and London, two countries that aren't India.
+    data:
+      n: 5
+      cue: 0
+      labels: {A: India, B: UAE, C: UK}
+      cities: {A: Mumbai, B: Dubai, C: London}
+      note: "Needs the agreement of *both* foreign States"
+      noteCue: 2
+
+  - id: globe5
+    type: globe
+    say: >-
+      On a real map, that fifth-freedom flight looks like this. {{0}}Mumbai to Dubai, {{1}}then Dubai on to London. India
+      needs permission from the U-A-E {{2}}and from the U-K before it can sell a single Dubai-London seat.
+    data:
+      kicker: Fifth freedom · real map
+      title: "Mumbai → Dubai → *London*"
+      notes:
+        - {icon: route, text: "Mumbai → Dubai", sub: "3rd freedom (traffic out of India)", cue: 0}
+        - {icon: route, text: "Dubai → London", sub: "5th freedom: needs UAE *and* UK consent", cue: 1}
+      globe:
+        start: {lon: 60, lat: 24}
+        focus:
+          - {cue: 1, lon: 35, lat: 35}
+        markers:
+          - {lat: 19.08, lon: 72.88, label: "Mumbai", cue: 0, big: true, labelPos: bl}
+          - {lat: 25.25, lon: 55.36, label: "Dubai", cue: 0}
+          - {lat: 51.47, lon: -0.45, label: "London", cue: 1}
+        arcs:
+          - {from: Mumbai, to: Dubai, cue: 0, dur: 36}
+          - {from: Dubai, to: London, cue: 1, dur: 46, color: sky}
+
+  - id: remember15
+    type: examtip
+    say: >-
+      {{0}}One line to remember the first five: {{1}}one, over. Two, stop. Three, out. Four, back. Five, beyond.
+    data:
+      variant: remember
+      big: "Over · Stop · Out · Back · Beyond"
+      bigSize: 70
+      bigCue: 1
+      lines: ["1st over · 2nd stop", "3rd out · 4th back · 5th beyond"]
+      lineCues: [1, 1]
+
+  # ───────────────────────── CHAPTER 3
+  - id: ch3
+    type: chapter
+    say: >-
+      Chapter three. {{0}}The so-called freedoms, six to nine.
+    data:
+      n: 3
+      title: "The *so-called* freedoms"
+
+  - id: socalled
+    type: kinetic
+    say: >-
+      {{0}}Why "so-called"? Because no multilateral treaty grants them. {{1}}They're names that describe how airlines
+      combine rights in practice.
+    data:
+      tone: violet
+      mode: stack
+      lines:
+        - {t: "6 → 9 = *\"so-called\"*", cue: 0}
+        - {t: "Descriptions, not treaty rights", cue: 1, size: 64}
+
+  - id: f6
+    type: freedom
+    say: >-
+      {{0}}Sixth freedom: foreign to foreign, through home. {{1}}London to Delhi, change planes, Delhi to Sydney — on one
+      Indian airline. This is the hub model.
+    data:
+      n: 6
+      cue: 0
+      labels: {A: India, B: UK, C: Australia}
+      cities: {A: Delhi, B: London, C: Sydney}
+
+  - id: sixth-key
+    type: examtip
+    say: >-
+      {{0}}Key point: the sixth freedom isn't really a new right. {{1}}It's a fourth-freedom flight into home, {{2}}joined to a
+      third-freedom flight out again — glued together at the hub.
+    data:
+      variant: key
+      big: "6th = *4th + 3rd*, joined at home"
+      bigCue: 0
+      lines: ["London → Delhi = *4th* freedom (into home)", "Delhi → Sydney = *3rd* freedom (out of home)"]
+      lineCues: [1, 2]
+
+  - id: f7
+    type: freedom
+    say: >-
+      {{0}}Seventh freedom: foreign to foreign, never touching home. {{1}}An Indian airline flying London to Paris.
+    data:
+      n: 7
+      cue: 0
+      labels: {A: India, B: UK, C: France}
+      cities: {A: Delhi, B: London, C: Paris}
+
+  - id: f8
+    type: freedom
+    say: >-
+      {{0}}Eighth freedom: consecutive cabotage. {{1}}Mumbai to London, then on to Manchester — carrying passengers
+      within the U-K.
+    data:
+      n: 8
+      cue: 0
+      labels: {A: India, B: UK, C: ""}
+      cities: {A: Mumbai, B: London, B2: Manchester, C: ""}
+
+  - id: f9
+    type: freedom
+    say: >-
+      {{0}}Ninth freedom: stand-alone cabotage. {{1}}An Indian airline flying London to Manchester, nothing to do with
+      India at all.
+    data:
+      n: 9
+      cue: 0
+      labels: {A: India, B: UK, C: ""}
+      cities: {A: Mumbai, B: London, B2: Manchester, C: ""}
+
+  - id: trap89
+    type: examtip
+    say: >-
+      {{0}}Exam trap: the eighth and ninth freedoms are cabotage. {{1}}That's Article Seven territory — and the right
+      States guard most closely.
+    data:
+      variant: trap
+      q: "8th and 9th freedoms are…"
+      wrong: "Fifth-freedom traffic"
+      wrongCue: 0
+      right: "Cabotage (Article 7)"
+      rightCue: 1
+      sub: "8th consecutive · 9th stand-alone"
+      subCue: 1
+
+  - id: ncap
+    type: examtip
+    say: >-
+      {{0}}And India? Under the National Civil Aviation Policy, {2016,|twenty sixteen,} {{1}}India offers open skies on a
+      reciprocal basis to SAARC countries {{2}}and to countries entirely beyond five thousand kilometres of New Delhi.
+    data:
+      variant: exam
+      big: "NCAP 2016 · *open skies*"
+      bigCue: 0
+      lines: ["Reciprocal open skies with *SAARC* countries", "…and countries *beyond 5,000 km* of New Delhi"]
+      lineCues: [1, 2]
+
+  # ───────────────────────── CHAPTER 4
+  - id: ch4
+    type: chapter
+    say: >-
+      Chapter four. {{0}}Freedoms in the real world.
+    data:
+      n: 4
+      title: "Freedoms in the *real world*"
+      bg3d: {shot: takeoff, view: low, shift: 0.3}
+
+  - id: hubs
+    type: globe
+    say: >-
+      {{0}}Look at Dubai, {{1}}Doha {{2}}and Singapore. Airlines based there built worldwide networks on the sixth freedom
+      — a large share of their passengers are simply changing planes on the way somewhere else.
+    data:
+      kicker: Sixth-freedom hubs
+      title: "Built on *connecting* passengers"
+      notes:
+        - {icon: airport, text: "Dubai", sub: "UAE", cue: 0}
+        - {icon: airport, text: "Doha", sub: "Qatar", cue: 1}
+        - {icon: airport, text: "Singapore", sub: "Singapore", cue: 2}
+      globe:
+        start: {lon: 70, lat: 20}
+        focus:
+          - {cue: 2, lon: 80, lat: 12}
+        markers:
+          - {lat: 25.25, lon: 55.36, label: "Dubai", cue: 0, big: true}
+          - {lat: 25.27, lon: 51.61, label: "Doha", cue: 1, labelPos: l}
+          - {lat: 1.36, lon: 103.99, label: "Singapore", cue: 2, big: true}
+
+  - id: why-cabotage
+    type: kinetic
+    say: >-
+      {{0}}So why do countries guard cabotage so closely? {{1}}Because domestic routes are where their own airlines earn
+      their living.
+    data:
+      tone: accent
+      mode: stack
+      lines:
+        - {t: "Why guard *cabotage*?", cue: 0}
+        - {t: "Domestic routes = home airlines' *living*", cue: 1, size: 70}
+
+  - id: eu
+    type: examtip
+    say: >-
+      {{0}}Studying for EASA? Here's the big difference. {{1}}Inside the European Union's single aviation market, an EU
+      airline may fly domestic routes in another EU country. {{2}}Cabotage is open — but only for EU carriers.
+    data:
+      variant: easa
+      big: "EU single market: cabotage *open* (EU carriers)"
+      bigSize: 62
+      bigCue: 0
+      lines: ["An EU airline may fly domestic routes in another EU State", "Non-EU airlines: still no cabotage"]
+      lineCues: [1, 2]
+
+  - id: family
+    type: whiteboard
+    say: >-
+      Let's put all nine on one board. {{0}}One and two are about passage — getting through. {{1}}Three and four carry
+      traffic to and from home. {{2}}Five goes beyond. {{3}}Six and seven link two foreign countries. {{4}}And eight and nine
+      are cabotage.
+    data:
+      kicker: All nine on one board
+      title: "The freedom *family*"
+      nodes:
+        - {id: p, label: "1 · 2", sub: "passage: over, stop", x: 150, y: 330, w: 300, h: 130, cue: 0}
+        - {id: t, label: "3 · 4", sub: "to and from home", x: 500, y: 330, w: 300, h: 130, cue: 1}
+        - {id: f, label: "5", sub: "beyond", x: 850, y: 330, w: 260, h: 130, cue: 2}
+        - {id: s, label: "6 · 7", sub: "foreign ↔ foreign", x: 1160, y: 330, w: 300, h: 130, cue: 3, color: "#6B5BD6"}
+        - {id: c, label: "8 · 9", sub: "cabotage", x: 1510, y: 330, w: 280, h: 130, cue: 4, color: "#D9363E"}
+      edges:
+        - {from: p, to: t, cue: 1}
+        - {from: t, to: f, cue: 2}
+        - {from: f, to: s, cue: 3}
+        - {from: s, to: c, cue: 4}
+      notes:
+        - {x: 150, y: 540, text: "Official (treaty): 1–5", cue: 2, size: 34}
+        - {x: 1160, y: 540, text: "So-called: 6–9", cue: 3, size: 34, color: "#6B5BD6"}
+
+  # ───────────────────────── QUIZ + RECAP
+  - id: quiz1
+    type: quiz
+    say: >-
+      Quick check. {{0}}Air India flies Mumbai to Dubai to London, selling Dubai to London seats. Which freedom? {{1}}Think.
+      [[pause 3]] {{2}}The fifth freedom: traffic between two foreign countries on a service from home.
+    data:
+      kicker: Quick check
+      n: 1
+      of: 4
+      q: "Mumbai → Dubai → London, selling *Dubai–London* seats: which freedom?"
+      options: ["3rd", "4th", "5th", "7th"]
+      answer: 2
+      explain: "Traffic between two foreign States on a service that starts at home"
+
+  - id: quiz2
+    type: quiz
+    say: >-
+      {{0}}Which freedoms does the Transit Agreement cover? {{1}}Lock it in. [[pause 3]] {{2}}The first and the second:
+      overflight and technical stops.
+    data:
+      kicker: Quick check
+      n: 2
+      of: 4
+      q: "The *Transit Agreement* grants which freedoms?"
+      options: ["1st and 2nd", "1st to 5th", "3rd and 4th", "All nine"]
+      answer: 0
+      explain: "Transit = 1 + 2 · Transport = 1 to 5"
+
+  - id: quiz-tech
+    type: quiz
+    say: >-
+      {{0}}A flight lands abroad only to refuel, and nobody boards or leaves. Which freedom? {{1}}Think. [[pause 3]]
+      {{2}}The second freedom: a stop for non-traffic purposes.
+    data:
+      kicker: Quick check
+      n: 3
+      of: 4
+      q: "Landing abroad *only to refuel*, no passengers on or off: which freedom?"
+      options: ["1st", "2nd", "3rd", "5th"]
+      answer: 1
+      explain: "A technical stop = stop for non-traffic purposes = 2nd freedom"
+
+  - id: quiz3
+    type: quiz
+    say: >-
+      {{0}}Last one: an Indian airline flies London to Manchester only. Which freedom? {{1}}Three seconds. [[pause 3]]
+      {{2}}The ninth: stand-alone cabotage.
+    data:
+      kicker: Quick check
+      n: 4
+      of: 4
+      q: "Indian airline, *London → Manchester* only: which freedom?"
+      options: ["7th", "8th", "9th", "6th"]
+      answer: 2
+      explain: "Inside one foreign State, unconnected to home = 9th (stand-alone cabotage)"
+
+  - id: recap
+    type: recap
+    say: >-
+      Recap. {{0}}Transit Agreement: freedoms one and two. Transport Agreement: one to five. {{1}}One over, two stop,
+      three out, four back, five beyond. {{2}}Six to nine are so-called. {{3}}Eight and nine are cabotage. {{4}}And India's
+      {2016|twenty sixteen} policy: open skies with SAARC and beyond five thousand kilometres.
+    data:
+      kicker: Recap
+      title: What you learned today
+      items:
+        - "Transit = freedoms 1–2 · Transport = 1–5"
+        - "Over · Stop · Out · Back · Beyond"
+        - "6th–9th are *so-called*"
+        - "8th & 9th = *cabotage*"
+        - "NCAP 2016: SAARC + beyond 5,000 km (reciprocal)"
+
+  - id: outro
+    type: outro
+    say: >-
+      Next episode: the air law conventions you must know — Tokyo, The Hague, Montreal and more, in one clear timeline.
+      {{0}}Subscribe, and see you tomorrow at ten fifteen.
+    data:
+      next: "Air Law Conventions You Must Know"
+      nextSub: "Episode 4 · tomorrow, 10:15 AM IST"
+      cta: Subscribe
+
+reel:
+  title: "The 5th freedom explained in 30 seconds #DGCA #aviation"
+  caption: |
+    How can Air India sell you a Dubai → London ticket? ✈️ The 5th freedom of the air.
+    All nine freedoms, animated: YouTube · Runway To Cockpit · Air Regulations Ep 3
+    #DGCA #pilottraining #aviation #CPL #airregulations #freedomsoftheair
+  scenes:
+    - type: rhook
+      say: >-
+        How can an Indian airline sell you a ticket from Dubai to London? {{0}}The fifth freedom.
+      data:
+        lines: ["Indian airline,", "*Dubai → London*?"]
+    - type: rpoints
+      say: >-
+        {{0}}It flies Mumbai to Dubai. {{1}}Then carries on to London. {{2}}And sells seats between the two foreign stops.
+      data:
+        items: ["Mumbai → Dubai", "Dubai → London", "= *5th freedom*"]
+    - type: rtip
+      say: >-
+        {{0}}DGCA exam: one over, two stop, three out, four back, five beyond.
+      data:
+        text: "1 over · 2 stop · 3 out · 4 back · *5 beyond*"
+    - type: rend
+      say: >-
+        All nine freedoms on the channel.
+      data: {}
+
+posts:
+  - variant: tip
+    caption: |
+      📌 Remember the first five freedoms of the air in one line: OVER · STOP · OUT · BACK · BEYOND ✈️
+
+      All nine, animated: YouTube @runwaytocockpit · Air Regulations Ep 3
+      #DGCA #CPL #ATPL #freedomsoftheair #airregulations #pilottraining #aviation
+    data:
+      kind: remember
+      title: "Over · Stop · Out · *Back · Beyond*"
+      sub: "The five official freedoms of the air"
+      lines:
+        - "*1st* overfly · *2nd* technical stop"
+        - "*3rd* home → abroad · *4th* abroad → home"
+        - "*5th* between two foreign States"
+  - variant: quiz
+    caption: |
+      🧠 Air India: Mumbai → Dubai → London, selling Dubai–London seats. Which freedom? Swipe 👉
+
+      Daily DGCA lessons at 10:15 AM · @runwaytocockpit
+      #DGCA #CPL #aviationquiz #freedomsoftheair #studentpilot
+    data:
+      q: "Mumbai → Dubai → London, selling *Dubai–London* seats: which freedom?"
+      options: ["3rd", "4th", "5th", "7th"]
+      answer: 2
+      explain: "Fifth freedom: traffic between two foreign States on a service that starts or ends at home."
+  - variant: sheet
+    caption: |
+      📋 Save this: all nine freedoms of the air on one page.
+
+      Full lesson: YouTube @runwaytocockpit · Air Regulations Ep 3
+      #DGCA #CPL #ATPL #freedomsoftheair #airregulations #cheatsheet
+    data:
+      title: "The *9 freedoms* of the air"
+      items:
+        - {icon: inflight, t: "1 · Overfly", sub: "2 · Technical stop (Transit Agreement)"}
+        - {icon: departure, t: "3 · Home → abroad", sub: "4 · Abroad → home"}
+        - {icon: route, t: "5 · Between two foreign States", sub: "on a service to / from home"}
+        - {icon: arrival, t: "6 · Foreign → home → foreign", sub: "the hub model (so-called)"}
+        - {icon: world, t: "7 · Foreign ↔ foreign", sub: "never touching home (so-called)"}
+        - {icon: x, t: "8 · Consecutive cabotage", sub: "9 · Stand-alone cabotage"}

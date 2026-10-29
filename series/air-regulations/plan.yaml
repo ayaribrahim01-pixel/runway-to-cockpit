@@ -1,0 +1,55 @@
+# Air Regulations — series plan (DGCA CPL/ATPL syllabus order, with EASA / UK CAA notes where they differ).
+# status: scripted = a script exists in this folder; planned = still to write.
+# The daily build takes the next scripted episode that has not been published (engine/publish_queue.py).
+
+series: air-regulations
+series_name: Air Regulations
+episodes:
+  - {ep: 1, code: AR-001, status: scripted, title: "Who Writes the Rules of the Sky?", topics: "Chicago Convention 1944, Art 1-2-12, ICAO bodies (Council 40), SARPs, Annexes, PANS, BVA 2024 chain of law"}
+  - {ep: 2, code: AR-002, status: scripted, title: "Chicago Convention: the Articles DGCA Asks", topics: "Art 3 & 3bis, 5 vs 6, 7 cabotage, 9 prohibited areas, 17-20 nationality, 29 documents, 30-33, 16/25/26/35, 83bis, 90, 96 definitions"}
+  - {ep: 3, code: AR-003, status: scripted, title: "Freedoms of the Air", topics: "Transit vs Transport Agreements, freedoms 1-9, NCAP 2016 open skies, bilaterals, memory grid"}
+  - {ep: 4, code: AR-004, status: scripted, title: "Air Law Conventions You Must Know", topics: "Paris 1919, Warsaw 1929, Rome 1952, Tokyo 1963, Hague 1970, Montreal 1971 & 1988 & 1999, Beijing 2010, Cape Town 2001"}
+  - {ep: 5, code: AR-005, status: planned, title: "ICAO in Depth & Other Aviation Bodies", topics: "Assembly, Council, ANC, ATC, Secretariat, regional offices, IATA, ECAC, EASA, EUROCONTROL, FAA"}
+  - {ep: 6, code: AR-006, status: planned, title: "Definitions That Win Marks (Part 1)", topics: "Annex 2/11 definitions: aerodrome, AIP, airway, ATS route, control zone, CTA, flight plan, VMC/IMC"}
+  - {ep: 7, code: AR-007, status: planned, title: "Definitions That Win Marks (Part 2)", topics: "Night, IFR/VFR, transition altitude/level/layer, RVR, decision altitude, MDA, ETA/EET"}
+  - {ep: 8, code: AR-008, status: planned, title: "Aircraft Nationality & Registration Marks", topics: "Annex 7, VT- marks, size and placement, fireproof identification plate, certificate of registration"}
+  - {ep: 9, code: AR-009, status: planned, title: "Rules of the Air: The Basics", topics: "Annex 2 applicability, PIC authority, negligence, minimum heights, dropping, towing, formation, acrobatics"}
+  - {ep: 10, code: AR-010, status: planned, title: "Right of Way & Avoiding Collisions", topics: "converging, head-on, overtaking, landing priority, ground movement, lights to be displayed"}
+  - {ep: 11, code: AR-011, status: planned, title: "Signals Every Pilot Must Know", topics: "light signals from ATC, visual ground signals, marshalling signals, distress & urgency"}
+  - {ep: 12, code: AR-012, status: planned, title: "VFR: Minima & Rules", topics: "VMC table by airspace class, special VFR, VFR at night in India, cruising levels"}
+  - {ep: 13, code: AR-013, status: planned, title: "IFR & Flight Plans", topics: "IFR minimum levels, change from IFR to VFR, flight plan contents, submission times, closing"}
+  - {ep: 14, code: AR-014, status: planned, title: "Interception", topics: "intercepting & intercepted aircraft actions, signals, radio phrases, 121.5"}
+  - {ep: 15, code: AR-015, status: planned, title: "Squawk Codes, Emergencies & Unlawful Interference", topics: "7500/7600/7700/2000, emergency descent, unlawful interference procedures"}
+  - {ep: 16, code: AR-016, status: planned, title: "Air Traffic Services: Who Does What", topics: "ATC, FIS, alerting service, units (ACC, APP, TWR), objectives of ATS"}
+  - {ep: 17, code: AR-017, status: planned, title: "Airspace Classes A to G", topics: "services per class, VFR/IFR permitted, speed limits, clearances"}
+  - {ep: 18, code: AR-018, status: planned, title: "FIRs, Control Areas & Zones in India", topics: "Delhi, Mumbai, Kolkata, Chennai FIRs (+ Guwahati sub), CTR, TMA, airways, prohibited/restricted/danger areas"}
+  - {ep: 19, code: AR-019, status: planned, title: "Vertical Separation & RVSM", topics: "1000/2000 ft, RVSM FL290-410, semicircular rule, RVSM approval"}
+  - {ep: 20, code: AR-020, status: planned, title: "Lateral Separation", topics: "VOR/NDB radials, geographic, RNAV, track separation values"}
+  - {ep: 21, code: AR-021, status: planned, title: "Longitudinal Separation: Time", topics: "15/10/5/3 min rules, Mach number technique"}
+  - {ep: 22, code: AR-022, status: planned, title: "Longitudinal Separation: Distance (DME/GNSS)", topics: "20/10 NM DME, same track, crossing, reciprocal"}
+  - {ep: 23, code: AR-023, status: planned, title: "Separation Near Aerodromes & Wake Turbulence", topics: "wake categories (J/H/M/L), time & distance minima, departing/arriving"}
+  - {ep: 24, code: AR-024, status: planned, title: "Aerodrome Control Procedures", topics: "circuit, clearances, runway incursion prevention, holding points, landing clearance"}
+  - {ep: 25, code: AR-025, status: planned, title: "Radar & ATS Surveillance", topics: "PSR/SSR/ADS-B, radar separation 5/3 NM, vectoring, identification"}
+  - {ep: 26, code: AR-026, status: planned, title: "Altimeter Setting Procedures", topics: "QNH/QFE/QNE, transition altitude, level and layer, India TA values"}
+  - {ep: 27, code: AR-027, status: planned, title: "Position Reports & Radio Failure", topics: "compulsory reporting points, AIREP, RCF procedures VMC/IMC"}
+  - {ep: 28, code: AR-028, status: planned, title: "Aeronautical Information: AIP, AIRAC, NOTAM", topics: "AIP parts GEN/ENR/AD, AIRAC cycle 28 days, NOTAM series, AIC, PIB"}
+  - {ep: 29, code: AR-029, status: planned, title: "Search and Rescue", topics: "Annex 12, phases INCERFA/ALERFA/DETRESFA, RCC, ground-air signals, ELT"}
+  - {ep: 30, code: AR-030, status: planned, title: "Runway Markings", topics: "Annex 14 markings: designator, threshold, aiming point, TDZ, centreline, edge, displaced threshold, holding positions (airportmap scene)"}
+  - {ep: 31, code: AR-031, status: planned, title: "Aerodrome Lighting & PAPI", topics: "approach lighting, PAPI/APAPI, edge/threshold/end lights, taxiway lights, stop bars"}
+  - {ep: 32, code: AR-032, status: planned, title: "Signs, Signals Area & Wind Indicators", topics: "mandatory/information signs, signal area, wind direction indicator, landing T"}
+  - {ep: 33, code: AR-033, status: planned, title: "Holding Procedures", topics: "standard holding, entries, speeds, timing"}
+  - {ep: 34, code: AR-034, status: planned, title: "Instrument Approach Procedures", topics: "approach segments, OCA/H, DA/MDA, missed approach, circling"}
+  - {ep: 35, code: AR-035, status: planned, title: "Departures & SSR Operating Procedures", topics: "SID design, MSA, SSR modes, operating procedures"}
+  - {ep: 36, code: AR-036, status: planned, title: "Indian Aviation Law: Act, Rules & Penalties", topics: "BVA 2024 sections, rules status, penalties, DGCA powers"}
+  - {ep: 37, code: AR-037, status: planned, title: "Pilot Licences in India", topics: "SPL/PPL/CPL/ATPL requirements, ratings, validity, Rule 22A solo flight"}
+  - {ep: 38, code: AR-038, status: planned, title: "Medical Requirements & Fitness", topics: "Class 1/2, validity periods, decrease in medical fitness, alcohol rules"}
+  - {ep: 39, code: AR-039, status: planned, title: "Airworthiness", topics: "Annex 8, CofA, maintenance, MEL, journey log"}
+  - {ep: 40, code: AR-040, status: planned, title: "Operation of Aircraft", topics: "Annex 6, fuel planning, documents, flight time limitations, equipment"}
+  - {ep: 41, code: AR-041, status: planned, title: "Special Procedures & Hazards", topics: "bird strikes, volcanic ash, wind shear, GPWS/TCAS procedures"}
+  - {ep: 42, code: AR-042, status: planned, title: "Communications: Annex 10 Essentials", topics: "frequencies, phraseology, distress & urgency messages"}
+  - {ep: 43, code: AR-043, status: planned, title: "Accident & Incident Investigation", topics: "Annex 13, definitions, AAIB, reporting, final report"}
+  - {ep: 44, code: AR-044, status: planned, title: "Facilitation", topics: "Annex 9, entry/departure of aircraft, persons, cargo, disinsection"}
+  - {ep: 45, code: AR-045, status: planned, title: "Aviation Security", topics: "Annex 17, BCAS, screening, unruly passengers"}
+  - {ep: 46, code: AR-046, status: planned, title: "Dangerous Goods", topics: "Annex 18, Technical Instructions, classes, pilot notification"}
+  - {ep: 47, code: AR-047, status: planned, title: "Full Revision: 60 Most-Asked Facts", topics: "rapid-fire revision built from previous-year questions"}
+  - {ep: 48, code: AR-048, status: planned, title: "Mock Test with Explanations", topics: "30 questions, timed, explained answers"}

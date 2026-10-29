@@ -1,0 +1,115 @@
+name: Daily lesson (build + YouTube)
+
+# Every evening: build the next scripted episode and schedule it on YouTube for the next day's
+# go-live time in config/channel.yaml (10:15 IST). Instagram posts at go-live (instagram.yml).
+on:
+  schedule:
+    - cron: "15 14 * * *"       # 19:45 IST: builds overnight, goes live 10:15 IST next morning
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode file to build (optional, e.g. series/air-regulations/ep002.yaml)"
+        required: false
+      publish_now:
+        description: "Publish immediately instead of at the daily time"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-lesson
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+
+      - name: Pick episode
+        id: pick
+        env:
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then
+            echo "YouTube isn't connected yet (add the YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN secrets). Skipping."
+            echo "episode=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          pip install -q pyyaml
+          EP="${{ github.event.inputs.episode }}"
+          if [ -z "$EP" ]; then EP=$(python3 engine/publish_queue.py next); fi
+          if [ -z "$EP" ]; then
+            echo "No scripted episode waiting. Add scripts to series/<subject>/ (the weekly writer task does this)."
+            echo "episode=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Building $EP"
+          echo "episode=$EP" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v4
+        if: steps.pick.outputs.episode != ''
+        with: {node-version: "20"}
+
+      - name: System packages
+        if: steps.pick.outputs.episode != ''
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg
+          sudo apt-get install -y -q libnss3 libdbus-1-3 libatk1.0-0 libgbm1 libxrandr2 libxkbcommon0 libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2 || true
+
+      - name: Cache voice model
+        if: steps.pick.outputs.episode != ''
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0-timed
+
+      - name: Install
+        if: steps.pick.outputs.episode != ''
+        run: |
+          pip install -q -r requirements.txt
+          python engine/setup_models.py
+          npm ci --prefix remotion --no-audit --no-fund
+          (cd remotion && npx remotion browser ensure)
+
+      - name: Build episode
+        if: steps.pick.outputs.episode != ''
+        run: |
+          python engine/validate.py "${{ steps.pick.outputs.episode }}"
+          python engine/build.py "${{ steps.pick.outputs.episode }}"
+          python engine/qa.py out/*/*/ || true
+
+      - name: Upload to YouTube
+        if: steps.pick.outputs.episode != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          MAN=$(ls out/*/*/manifest.json | head -1)
+          if [ "${{ github.event.inputs.publish_now }}" = "true" ]; then NOW="--now"; else NOW=""; fi
+          python upload/youtube_upload.py "$MAN" $NOW
+          echo "MAN=$MAN" >> "$GITHUB_ENV"
+
+      - name: Keep the files (release) and record as published
+        if: steps.pick.outputs.episode != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          D=$(dirname "$MAN")
+          CODE=$(python3 -c "import json;print(json.load(open('$MAN'))['code'])")
+          ls "$D"/posts/*.jpg >/dev/null 2>&1 && POSTS="$D/posts/*.jpg $D/posts/posts.json" || POSTS=""
+          gh release create "$CODE" "$D"/*.mp4 "$D"/thumbnail.jpg "$D"/*.srt "$D"/description.txt "$D"/manifest.json "$D"/youtube_result.json $POSTS \
+            --title "$CODE" --notes "Built and scheduled $(date -u +%F)" || true
+          python engine/publish_queue.py done "$CODE" "$D/youtube_result.json"
+          git config user.name "studio-bot"
+          git config user.email "studio-bot@users.noreply.github.com"
+          git add state series
+          git commit -m "Published $CODE" || true
+          git push

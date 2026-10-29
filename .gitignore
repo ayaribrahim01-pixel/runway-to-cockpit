@@ -1,0 +1,8 @@
+# build outputs and large downloads (recreated automatically)
+out/
+models/*.onnx
+models/*.bin
+remotion/node_modules/
+__pycache__/
+*.pyc
+.DS_Store

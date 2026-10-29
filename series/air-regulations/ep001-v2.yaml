@@ -1,0 +1,703 @@
+# Air Regulations · Episode 1 (v2 style) — Who Writes the Rules of the Sky?
+# Narration markup: {{n}} = visual cue, [[pause s]] = silence, {shown,|spoken,} *word* = emphasis.
+
+series: air-regulations
+series_name: Air Regulations
+series_short: Air Regs
+code: AR-001
+episode: 1
+style: v2
+title: Who Writes the Rules of the Sky?
+subtitle: ICAO, the Chicago Convention & India's aviation law
+intro_chapter: Why every runway looks the same
+playlist: Air Regulations — DGCA CPL/ATPL
+next:
+  title: "Chicago Convention: the Articles DGCA Asks"
+
+sources:
+  - "Convention on International Civil Aviation (Chicago Convention), ICAO Doc 7300"
+  - "ICAO news, 3 July 2026: Extraordinary Assembly 19–20 Nov 2026; Council enlarged from 36 to 40 (Art. 50(a) Protocol in force 12 June 2026)"
+  - "Bharatiya Vayuyan Adhiniyam, 2024 (Act No. 16 of 2024), in force 1 January 2025"
+  - "Supreme Court of India, hearing of 16 October 2026: rules under the BVA approved, to be published"
+  - "R.K. Bali, Air Regulations & Human Factors (17th ed.); DGCA previous-year question banks"
+
+youtube:
+  title: "Who Writes the Rules of the Sky? ICAO & the Chicago Convention | DGCA Air Regulations Ep 1"
+  description: |
+    Why does every runway on Earth look the same? Because one treaty — signed in Chicago in 1944 — wrote the rules of the sky. In this first lesson of the DGCA Air Regulations series we cover the Chicago Convention, Article 1 sovereignty, ICAO and its bodies (Council now 40 States), SARPs, the 19 Annexes, PANS documents, and India's chain of aviation law under the Bharatiya Vayuyan Adhiniyam 2024.
+  key_facts:
+    - "Chicago Convention signed 7 Dec 1944 by 52 States (54 attended); in force 4 April 1947; 96 Articles"
+    - "Article 1: complete and exclusive sovereignty over the airspace above a State's territory"
+    - "ICAO: UN specialised agency, HQ Montréal, 193 Member States"
+    - "ICAO Council: 40 members since 12 June 2026 (4 new seats elected 19–20 Nov 2026)"
+    - "Standards = 'shall'; Recommended Practices = 'should'; differences notified under Article 38 (AIP GEN 1.7)"
+    - "PANS-ATM = Doc 4444; PANS-OPS = Doc 8168"
+    - "BVA 2024 in force 1 Jan 2025; Sec 3 DGCA, Sec 5 BCAS, Sec 7 AAIB, Sec 11 rules to implement the Convention; Sec 43 saves the Aircraft Rules 1937"
+  tags: [DGCA, Air Regulations, CPL, ATPL, ICAO, Chicago Convention, pilot training India, DGCA exam, EASA air law, UK CAA air law, aviation law]
+  hashtags: ["#DGCA", "#AirRegulations", "#CPL", "#PilotTraining", "#ICAO", "#Aviation"]
+
+thumbnail:
+  line1: Who rules
+  line2: the sky?
+  badge: AIR REGS · EP 01
+  kicker: DGCA · EASA · UK CAA
+  markers:
+    - {lat: 9.93, lon: 76.27}
+    - {lat: 51.47, lon: -0.45}
+  arcs:
+    - {from: [76.27, 9.93], to: [-0.45, 51.47]}
+  rotate: [46, 26]
+
+scenes:
+  # ───────────────────────── HOOK
+  - id: hook
+    type: airportmap
+    say: >-
+      Land in Kochi. {{0}}Land in London. Land in Tokyo. {{1}}The runway numbers look the same. {{2}}The white piano keys
+      look the same. {{3}}Even the lights that guide you down look the same. [[pause 0.3]] {{4}}That is not luck.
+    data:
+      kicker: "Kochi · London · Tokyo"
+      title: "Why does every runway look the *same*?"
+      legend: false
+      plane: {cue: 1, speed: 0.85}
+      callouts:
+        - {n: 1, label: "Runway designator", sub: "*09* = magnetic heading ≈ 090°", at: designator, cue: 1, zoom: 3.0, rot: -78}
+        - {n: 2, label: "Threshold markings", sub: "The “piano keys”: the runway starts here", at: threshold, cue: 2, zoom: 2.8, rot: -74}
+        - {n: 3, label: "PAPI lights", sub: "2 red + 2 white = on the glide path", at: papi, cue: 3, zoom: 3.0, rot: -82}
+        - {overview: true, cue: 4}
+
+  - id: rulebook
+    type: kinetic
+    say: >-
+      Somebody wrote {{0}}one rulebook for the whole sky. {{1}}And in the next ten minutes, you'll know exactly who.
+    data:
+      tone: accent
+      mode: stack
+      lines:
+        - {t: "*One* rulebook.", cue: 0}
+        - {t: "The *whole* sky.", cue: 0, size: 110, delay: 14}
+        - {t: "Who wrote it?", cue: 1, size: 84}
+
+  - id: title
+    type: title3d
+    say: >-
+      Air Regulations, episode one. {{0}}Who writes the rules of the sky?
+    data:
+      title: "Who Writes the *Rules* of the Sky?"
+      sub: "ICAO, the Chicago Convention & India's aviation law"
+      shot: cruise
+      view: front
+
+  - id: roadmap
+    type: kinetic
+    say: >-
+      Here's the plan. {{0}}One treaty. {{1}}One United Nations agency. {{2}}And one chain of law that runs all the way down
+      to your DGCA exam.
+    data:
+      kicker: In this lesson
+      mode: stack
+      size: 92
+      lines:
+        - {t: "*One* treaty.", cue: 0}
+        - {t: "*One* UN agency.", cue: 1}
+        - {t: "*One* chain of law → your exam.", cue: 2}
+
+  # ───────────────────────── CHAPTER 1
+  - id: ch1
+    type: chapter
+    say: >-
+      Chapter one. {{0}}How the sky got its rules.
+    data:
+      n: 1
+      title: "How the sky got its *rules*"
+      bg3d: {shot: cruise, view: rear, shift: 0.3}
+
+  - id: history
+    type: whiteboard
+    say: >-
+      {{0}}{1903:|Nineteen-oh-three:} the Wright brothers fly. {{1}}Within sixteen years, aircraft are crossing borders —
+      so in {1919,|nineteen-nineteen,} the Paris Convention writes the first international air law. {{2}}{1929:|Nineteen
+      twenty-nine:} the Warsaw Convention sets the rules on airline liability. {{3}}Then, in the middle of World War Two,
+      delegates from fifty-four nations meet in Chicago.
+    data:
+      kicker: History
+      title: "How air law *grew up*"
+      drawing: wright
+      drawingAt: {x: 640, y: 190, s: 0.9}
+      nodes:
+        - {id: a, label: "1903", sub: "First powered flight", x: 150, y: 560, w: 330, h: 130, cue: 0}
+        - {id: b, label: "1919", sub: "Paris Convention", x: 570, y: 560, w: 330, h: 130, cue: 1}
+        - {id: c, label: "1929", sub: "Warsaw: airline liability", x: 990, y: 560, w: 330, h: 130, cue: 2}
+        - {id: d, label: "1944", sub: "Chicago Convention", x: 1410, y: 560, w: 330, h: 130, cue: 3, color: "#EE6A1A"}
+      edges:
+        - {from: a, to: b, cue: 1}
+        - {from: b, to: c, cue: 2}
+        - {from: c, to: d, cue: 3}
+      notes:
+        - {x: 1400, y: 728, text: "…during World War II", cue: 3, size: 32}
+
+  - id: signed
+    type: count
+    say: >-
+      {{0}}Fifty-two of those States signed the Convention on {7 December 1944.|the seventh of December, nineteen
+      forty-four.}
+    data:
+      kicker: The Chicago Convention
+      value: 52
+      cue: 0
+      countFrames: 42
+      label: "States *signed* in Chicago"
+      sub: "54 attended · signed 7 December 1944"
+      dots: 52
+      dotsLabel: "1 dot = 1 signatory State"
+
+  - id: article1
+    type: doc
+    say: >-
+      Its official name: {{0}}the Convention on International Civil Aviation — ninety-six articles. {{1}}And the article
+      every examiner loves is Article One: {{2}}every State has complete and exclusive sovereignty over the airspace above
+      its territory. {{3}}It came into force on {4 April 1947.|the fourth of April, nineteen forty-seven.}
+    data:
+      kicker: "Chicago Convention · 96 Articles"
+      title: "*Article 1* is the famous one"
+      sub: "Complete and exclusive sovereignty"
+      header: Convention on International Civil Aviation
+      headerSub: Signed at Chicago on 7 December 1944
+      lines:
+        - "# Part I · Air Navigation"
+        - "# Article 1 · Sovereignty"
+        - "The contracting States recognize that every"
+        - "State has complete and exclusive sovereignty"
+        - "over the airspace above its territory."
+        - "# Article 2 · Territory"
+        - "The territory of a State shall be deemed to be"
+        - "the land areas and territorial waters adjacent"
+      hl: {line: 3, cue: 2}
+      zoom: {cue: 2, scale: 1.32}
+      stamp: {text: "In force · 4 Apr 1947", cue: 3}
+
+  - id: dyk-day
+    type: examtip
+    say: >-
+      {{0}}Quiz bonus: the signing date, {7 December,|the seventh of December,} is now celebrated every year as
+      International Civil Aviation Day.
+    data:
+      variant: dyk
+      big: "7 December"
+      bigCue: 0
+      lines: ["*International Civil Aviation Day*", "The Chicago Convention's birthday"]
+      lineCues: [0, 0]
+
+  - id: sovereignty
+    type: airspace3d
+    say: >-
+      So what counts as a State's territory? {{0}}Start with the land. {{1}}Add the territorial sea — for India,
+      {{2}}twelve nautical miles out from the baseline along the coast. {{3}}All the airspace above both is sovereign.
+      [[pause 0.2]] {{4}}Beyond that lie the high seas. Nobody owns that sky — and Article Twelve says the ICAO Rules of the
+      Air apply there.
+    data:
+      kicker: "Articles 1, 2 & 12"
+      title: "Who owns the *sky*?"
+
+  - id: permission
+    type: kinetic
+    say: >-
+      So sovereign means one simple thing: {{0}}no foreign aircraft enters without permission.
+    data:
+      tone: accent
+      mode: stack
+      lines:
+        - "Sovereign airspace"
+        - {t: "= *permission* to enter", cue: 0}
+
+  # ───────────────────────── CHAPTER 2
+  - id: ch2
+    type: chapter
+    say: >-
+      Chapter two. {{0}}ICAO, the referee of the sky.
+    data:
+      n: 2
+      title: "ICAO: the *referee* of the sky"
+
+  - id: icao
+    type: globe
+    say: >-
+      The Convention also created an organisation to run it: {{0}}ICAO — the International Civil Aviation Organization.
+      {{1}}It's a specialised agency of the United Nations, {{2}}with its headquarters in Montreal, Canada. {{3}}And until
+      enough States had ratified, a provisional version — PICAO — did the job from {1945.|nineteen forty-five.}
+    data:
+      kicker: ICAO
+      title: "The UN agency for *aviation*"
+      notes:
+        - {icon: world, text: "UN specialised agency", sub: "Born 4 April 1947", cue: 1}
+        - {icon: pin, text: "HQ: *Montréal*, Canada", sub: "Not Chicago — a classic trap", cue: 2}
+        - {icon: clock, text: "*PICAO* 1945–47", sub: "Provisional ICAO, until the Convention came into force", cue: 3}
+      globe:
+        start: {lon: -30, lat: 28}
+        focus:
+          - {cue: 2, lon: -73.6, lat: 38}
+        markers:
+          - {lat: 45.50, lon: -73.57, label: "Montréal", cue: 2, big: true}
+
+  - id: trap-iata
+    type: examtip
+    say: >-
+      {{0}}Don't mix it up with IATA. {{1}}ICAO is made of governments. IATA is the airlines' own trade association.
+    data:
+      variant: trap
+      q: "ICAO or IATA: which one is made of *governments*?"
+      wrong: "IATA"
+      wrongCue: 0
+      right: "ICAO — States, under the UN"
+      rightCue: 1
+      sub: "IATA = the airlines' trade association"
+      subCue: 1
+
+  - id: members
+    type: count
+    say: >-
+      {{0}}Today, ICAO has one hundred and ninety-three member States. {{1}}India ratified the Convention on {1 March
+      1947|the first of March, nineteen forty-seven} — a month before it even came into force.
+    data:
+      kicker: ICAO today
+      value: 193
+      cue: 0
+      countFrames: 46
+      label: "Member *States*"
+      sub: "India ratified on *1 March 1947*"
+      dots: 193
+      dotsLabel: "1 dot = 1 Member State"
+
+  - id: languages
+    type: examtip
+    say: >-
+      {{0}}Did you know? ICAO works in six official languages: {{1}}Arabic, Chinese, English, French, Russian and Spanish.
+    data:
+      variant: dyk
+      big: "6 official languages"
+      bigCue: 0
+      lines: ["Arabic · Chinese · English", "French · Russian · Spanish"]
+      lineCues: [1, 1]
+
+  - id: regions
+    type: globe
+    say: >-
+      ICAO also runs seven regional offices around the world. {{0}}For India, the one that matters is the Asia and Pacific
+      office — {{1}}in Bangkok.
+    data:
+      kicker: ICAO regional offices
+      title: "Seven offices. India's is in *Bangkok*."
+      notes:
+        - {icon: world, text: "*7* Regional Offices", sub: "Bangkok · Cairo · Dakar · Lima · Mexico City · Nairobi · Paris", cue: 0}
+        - {icon: pin, text: "India → *Asia and Pacific*", sub: "APAC Regional Office, Bangkok", cue: 1}
+      globe:
+        start: {lon: 40, lat: 18}
+        focus:
+          - {cue: 1, lon: 96, lat: 15}
+        markers:
+          - {lat: 30.04, lon: 31.24, cue: 0}
+          - {lat: 14.72, lon: -17.47, cue: 0}
+          - {lat: -12.05, lon: -77.04, cue: 0}
+          - {lat: 19.43, lon: -99.13, cue: 0}
+          - {lat: -1.29, lon: 36.82, cue: 0}
+          - {lat: 48.86, lon: 2.35, cue: 0}
+          - {lat: 13.75, lon: 100.50, label: "Bangkok", cue: 1, big: true}
+
+  - id: bodies
+    type: whiteboard
+    say: >-
+      Inside ICAO: {{0}}the Assembly — every member State, meeting at least once every three years. {{1}}It elects the
+      Council, the permanent governing body. {{2}}The Council is advised by the Air Navigation Commission — the technical
+      experts who draft the Annexes. {{3}}And the Secretariat, led by the Secretary General, runs the day-to-day work.
+    data:
+      kicker: Inside ICAO
+      title: "Four bodies to *remember*"
+      nodes:
+        - {id: asm, label: "Assembly", sub: "all 193 States · at least every 3 years", x: 690, y: 190, w: 540, h: 130, cue: 0}
+        - {id: cou, label: "Council", sub: "permanent body · elected by the Assembly", x: 690, y: 420, w: 540, h: 130, cue: 1, color: "#EE6A1A"}
+        - {id: anc, label: "Air Navigation Commission", sub: "technical experts · draft the Annexes", x: 190, y: 660, w: 600, h: 130, cue: 2}
+        - {id: sec, label: "Secretariat", sub: "led by the Secretary General", x: 1130, y: 660, w: 560, h: 130, cue: 3}
+      edges:
+        - {from: asm, to: cou, cue: 1, label: elects}
+        - {from: cou, to: anc, cue: 2}
+        - {from: cou, to: sec, cue: 3}
+
+  - id: trap-council
+    type: examtip
+    say: >-
+      {{0}}Exam trap! Most books still say the Council has thirty-six members. {{1}}Since {12 June 2026,|the twelfth of
+      June, twenty twenty-six,} it's forty. {{2}}The four new seats are filled at a special Assembly in Montreal in
+      November.
+    data:
+      variant: trap
+      q: "How many States sit on the ICAO *Council*?"
+      wrong: "36"
+      wrongCue: 0
+      right: "40 — since 12 June 2026"
+      rightCue: 1
+      sub: "Extraordinary Assembly, 19–20 Nov 2026, Montréal: elects the 4 new members"
+      subCue: 2
+
+  - id: sarps
+    type: compare
+    say: >-
+      So what does ICAO actually produce? {{0}}SARPs — Standards and Recommended Practices. A Standard says "shall": States
+      must follow it, or tell ICAO they don't. {{1}}A Recommended Practice says "should": desirable, but not mandatory.
+    data:
+      kicker: SARPs
+      title: "Standards vs Recommended Practices"
+      left:
+        head: Standard
+        chip: SHALL
+        items: ["Necessary for safety or regularity", "States *must* comply…", "…or notify ICAO of a difference"]
+      right:
+        head: Recommended Practice
+        chip: SHOULD
+        items: ["Desirable for safety & efficiency", "States *endeavour* to comply", "Not mandatory"]
+
+  - id: article38
+    type: doc
+    say: >-
+      And if a State can't comply? {{0}}Article Thirty-Eight: it must notify ICAO immediately. {{1}}India publishes its
+      differences in the AIP, section {GEN 1.7.|jen one point seven.}
+    data:
+      kicker: Article 38
+      title: "Can't comply? *Tell ICAO.*"
+      header: Convention on International Civil Aviation
+      headerSub: "Chapter VI · International Standards"
+      lines:
+        - "# Article 37 · Uniformity"
+        - "States collaborate to secure the highest"
+        - "practicable degree of uniformity."
+        - "# Article 38 · Departures"
+        - "A State that finds it impracticable to comply"
+        - "shall give immediate notification to ICAO"
+        - "of the differences from the Standard."
+      hl: {line: 5, cue: 0}
+      zoom: {cue: 0, scale: 1.3}
+      stamp: {text: "AIP · GEN 1.7", cue: 1}
+
+  - id: annexes
+    type: grid
+    say: >-
+      Those Standards live in {{0}}nineteen Annexes. {{1}}You'll meet all of them in this series, but start with four:
+      {{2}}Annex One, Personnel Licensing. {{3}}Annex Two, Rules of the Air. {{4}}Annex Six, Operation of Aircraft.
+      {{5}}Annex Eleven, Air Traffic Services. [[pause 0.2]] {{6}}And those identical runways from the start? That's
+      Annex Fourteen — Aerodromes.
+    data:
+      kicker: 19 ICAO Annexes
+      cols: 5
+      groupCue: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      spotlight: [[2, 0], [3, 1], [4, 5], [5, 10], [6, 13]]
+      tiles:
+        - {n: 1, label: Personnel Licensing}
+        - {n: 2, label: Rules of the Air}
+        - {n: 3, label: Meteorology}
+        - {n: 4, label: Aeronautical Charts}
+        - {n: 5, label: Units of Measurement}
+        - {n: 6, label: Operation of Aircraft}
+        - {n: 7, label: Nationality & Registration Marks}
+        - {n: 8, label: Airworthiness}
+        - {n: 9, label: Facilitation}
+        - {n: 10, label: Aeronautical Telecommunications}
+        - {n: 11, label: Air Traffic Services}
+        - {n: 12, label: Search and Rescue}
+        - {n: 13, label: Accident Investigation}
+        - {n: 14, label: Aerodromes}
+        - {n: 15, label: Aeronautical Information Services}
+        - {n: 16, label: Environmental Protection}
+        - {n: 17, label: Security}
+        - {n: 18, label: Dangerous Goods}
+        - {n: 19, label: Safety Management}
+
+  - id: annex14
+    type: airportmap
+    say: >-
+      {{0}}Annex Fourteen is why a pilot from Kochi can land in London with no surprises: {{1}}the same holding lines,
+      {{2}}the same edge lights, {{3}}the same markings — everywhere on the planet.
+    data:
+      kicker: "ICAO Annex 14 · worldwide"
+      title: "Annex 14 = *Aerodromes*"
+      legend: false
+      rot: -4
+      callouts:
+        - {n: 1, label: "Holding position", sub: "Stop here unless cleared onto the runway", at: holding-position, cue: 1, zoom: 3.2, rot: -76}
+        - {n: 2, label: "Runway edge lights", sub: "Outline the runway at night and in low visibility", at: edge-lights, cue: 2, zoom: 2.6, rot: -82}
+        - {overview: true, cue: 3}
+
+  - id: remember-annexes
+    type: examtip
+    say: >-
+      {{0}}Here's a way to remember those four Annexes. {{1}}One: the pilot. {{2}}Two: the rules. {{3}}Six: the
+      aeroplane. {{4}}Eleven: the controller.
+    data:
+      variant: remember
+      big: "1 · 2 · 6 · 11"
+      bigCue: 0
+      lines:
+        - "Annex 1 → the *pilot* (licences)"
+        - "Annex 2 → the *rules* of the air"
+        - "Annex 6 → the *aeroplane* in operation"
+        - "Annex 11 → the *controller* (ATS)"
+      lineCues: [1, 2, 3, 4]
+
+  - id: pans
+    type: examtip
+    say: >-
+      {{0}}Key point: under the Annexes sit the PANS — Procedures for Air Navigation Services, the detailed how-to.
+      {{1}}PANS-ATM is {Doc 4444.|Doc forty-four forty-four.} {{2}}{PANS-OPS|Pans ops} is {Doc 8168.|Doc eighty-one
+      sixty-eight.} These two numbers come up again and again.
+    data:
+      variant: key
+      big: "PANS = the detailed *procedures*"
+      bigCue: 0
+      lines: ["PANS-ATM → *Doc 4444*", "PANS-OPS → *Doc 8168*"]
+      lineCues: [1, 2]
+
+  # ───────────────────────── CHAPTER 3
+  - id: ch3
+    type: chapter
+    say: >-
+      Chapter three. {{0}}From Chicago to your DGCA exam.
+    data:
+      n: 3
+      title: "From Chicago to your *DGCA exam*"
+      bg3d: {shot: takeoff, view: follow, shift: 0.3}
+
+  - id: ladder
+    type: ladder
+    say: >-
+      Here's the chain of law in India. {{0}}At the top: the Chicago Convention and its Annexes. {{1}}Parliament turns
+      them into law with the Bharatiya Vayuyan Adhiniyam, {2024.|twenty twenty-four.} {{2}}The Central Government makes
+      Rules under that Act. {{3}}DGCA issues the Civil Aviation Requirements — the CARs. {{4}}And the Airports Authority
+      of India publishes the AIP, AICs and NOTAMs.
+    data:
+      kicker: The chain of law
+      title: "Who makes which rule?"
+      tiers:
+        - {label: "Chicago Convention + Annexes", who: ICAO}
+        - {label: "Bharatiya Vayuyan Adhiniyam 2024", who: Parliament}
+        - {label: "Rules (e.g. Aircraft Rules 1937)", who: Central Govt}
+        - {label: "CARs: Civil Aviation Requirements", who: DGCA}
+        - {label: "AIP · AIC · NOTAM", who: AAI}
+
+  - id: bva
+    type: split
+    say: >-
+      The Act itself: {{0}}Act number sixteen of {2024,|twenty twenty-four,} {{1}}in force from {1 January 2025.|the first
+      of January, twenty twenty-five.} {{2}}It replaced the Aircraft Act of {1934|nineteen thirty-four} — after ninety
+      years. {{3}}Section three sets up DGCA, section five BCAS, section seven the AAIB, {{4}}and section eleven lets the
+      government make rules to implement the Chicago Convention.
+    data:
+      visual: {shot: takeoff, view: spotter}
+      side: left
+      tag: "Bharatiya Vayuyan Adhiniyam 2024"
+      kicker: India's aviation Act
+      title: "The *BVA* in five facts"
+      items:
+        - {icon: law, t: "Act No. 16 of 2024"}
+        - {icon: calendar, t: "In force 1 January 2025"}
+        - {icon: clock, t: "Replaced the Aircraft Act 1934"}
+        - {icon: hierarchy, t: "Sec 3 DGCA · Sec 5 BCAS · Sec 7 AAIB"}
+        - {icon: globe, t: "Sec 11: rules to implement the Convention"}
+
+  - id: trap-rules
+    type: examtip
+    say: >-
+      {{0}}Exam trap number two. If the old Act is gone, are the Aircraft Rules of {1937|nineteen thirty-seven} dead?
+      {{1}}No! Section forty-three keeps them working until the new rules are published. {{2}}In October, the government
+      told the Supreme Court the new rules were approved and would be published within weeks — so know both names.
+    data:
+      variant: trap
+      q: "Old Act repealed — are the *Aircraft Rules 1937* dead?"
+      wrong: "Yes, they lapsed"
+      wrongCue: 0
+      right: "No — Section 43 keeps them alive"
+      rightCue: 1
+      sub: "Oct 2026: new rules approved, publication due · know both names"
+      subCue: 2
+
+  - id: who
+    type: org
+    say: >-
+      {{0}}Who's who under the Ministry of Civil Aviation: {{1}}DGCA, the safety regulator — licences, airworthiness, the
+      CARs. {{2}}BCAS, aviation security. {{3}}AAIB, accident investigation. {{4}}And AAI, which runs airports and air
+      navigation services.
+    data:
+      kicker: "Who's who"
+      title: "Under the Ministry of Civil Aviation"
+      root: {label: "Ministry of Civil Aviation", icon: ministry}
+      nodes:
+        - {label: DGCA, full: "Directorate General of Civil Aviation", sub: "safety regulator", icon: certificate}
+        - {label: BCAS, full: "Bureau of Civil Aviation Security", sub: "aviation security", icon: security}
+        - {label: AAIB, full: "Aircraft Accident Investigation Bureau", sub: "accident investigation", icon: search}
+        - {label: AAI, full: "Airports Authority of India", sub: "airports + air navigation", icon: tower}
+
+  - id: easa
+    type: examtip
+    say: >-
+      {{0}}Studying for EASA or the UK CAA? Same Chicago foundation. {{1}}In Europe, EASA writes common rules for its
+      member States. {{2}}In Britain, the UK CAA regulates under the Air Navigation Order. {{3}}So the ICAO part of this
+      lesson is identical for you.
+    data:
+      variant: easa
+      big: "Same ICAO *foundation*"
+      bigCue: 0
+      lines: ["*EASA*: common rules for EU member States", "*UK CAA*: the Air Navigation Order", "ICAO content = identical for every exam"]
+      lineCues: [1, 2, 3]
+
+  # ───────────────────────── QUIZ + RECAP
+  - id: quiz1
+    type: quiz
+    say: >-
+      Quick check. {{0}}Which Article gives every State complete and exclusive sovereignty over its airspace? {{1}}Think
+      about it. [[pause 3]] {{2}}Article One. Article Two only defines what the territory is.
+    data:
+      kicker: Quick check
+      n: 1
+      of: 3
+      q: "Which Article gives every State *complete and exclusive sovereignty* over its airspace?"
+      options: ["Article 1", "Article 2", "Article 12", "Article 38"]
+      answer: 0
+      explain: "Art. 2 defines territory · Art. 12 rules of the air · Art. 38 differences"
+
+  - id: quiz2
+    type: quiz
+    say: >-
+      {{0}}Where is ICAO headquartered? {{1}}Lock in your answer. [[pause 3]] {{2}}Montreal, Canada — not Chicago,
+      where the Convention was signed.
+    data:
+      kicker: Quick check
+      n: 2
+      of: 3
+      q: "Where are ICAO's *headquarters*?"
+      options: ["Geneva", "Montréal", "Chicago", "New York"]
+      answer: 1
+      explain: "Signed in Chicago, headquartered in Montréal"
+
+  - id: quiz3
+    type: quiz
+    say: >-
+      {{0}}Last one: how many States sit on the ICAO Council today? {{1}}Three seconds. [[pause 3]] {{2}}Forty — since
+      June {2026.|twenty twenty-six.}
+    data:
+      kicker: Quick check
+      n: 3
+      of: 3
+      q: "How many States sit on the ICAO *Council* today?"
+      options: ["36", "40", "19", "193"]
+      answer: 1
+      explain: "36 → 40 when the Article 50(a) amendment came into force on 12 June 2026"
+
+  - id: recap
+    type: recap
+    say: >-
+      Let's recap. {{0}}Chicago, {1944:|nineteen forty-four:} ninety-six articles, in force in {1947.|nineteen forty-seven.}
+      {{1}}Article One: sovereignty. {{2}}ICAO: a UN agency in Montreal, one hundred and ninety-three States, and a Council
+      of forty. {{3}}Standards say shall; recommended practices say should. {{4}}And in India: the Act, the Rules, the CARs,
+      then the AIP and NOTAMs.
+    data:
+      kicker: Recap
+      title: What you learned today
+      items:
+        - "Chicago Convention 1944 · 96 Articles · in force 4 Apr 1947"
+        - "Article 1: complete & exclusive *sovereignty*"
+        - "ICAO: UN agency · Montréal · 193 States · Council of 40"
+        - "Standards *shall* · Recommended Practices *should*"
+        - "India: BVA 2024 → Rules → CARs → AIP / NOTAM"
+
+  - id: outro
+    type: outro
+    say: >-
+      Next episode: the Chicago Convention articles DGCA actually asks — cabotage, the documents every aircraft must
+      carry, and the Article that trips everyone up. {{0}}Subscribe so you don't miss it. A new lesson every day at ten
+      fifteen in the morning.
+    data:
+      next: "Chicago Convention: the Articles DGCA Asks"
+      nextSub: "Episode 2 · tomorrow, 10:15 AM IST"
+      cta: Subscribe
+
+reel:
+  title: "Who owns the sky above your house? #DGCA #aviation"
+  caption: |
+    Who owns the sky above your house? ✈️ Article 1 of the Chicago Convention answers it.
+    Full lesson on YouTube: Runway To Cockpit · Air Regulations Ep 1
+    #DGCA #pilottraining #aviation #CPL #airregulations #ICAO
+  scenes:
+    - type: rhook
+      say: >-
+        Who owns the sky above your house? {{0}}The answer was written in {1944.|nineteen forty-four.}
+      data:
+        lines: ["Who owns the sky", "*above your house?*"]
+    - type: rquote
+      say: >-
+        Article One of the Chicago Convention: {{0}}every State has complete and exclusive sovereignty over the airspace
+        above its territory.
+      data:
+        text: "Every State has complete and exclusive sovereignty over the airspace above its territory."
+        source: "Chicago Convention · Article 1"
+    - type: rpoints
+      say: >-
+        {{0}}That's the land, {{1}}plus twelve nautical miles of sea, {{2}}and everything above it.
+      data:
+        items: ["Land territory", "+ 12 NM territorial sea", "= sovereign airspace"]
+    - type: rstat
+      say: >-
+        {{0}}And one hundred and ninety-three countries signed up to it.
+      data:
+        value: "193"
+        label: "ICAO Member States"
+    - type: rtip
+      say: >-
+        {{0}}For your DGCA exam: Article One equals sovereignty.
+      data:
+        text: "DGCA exam: *Article 1* = sovereignty"
+    - type: rend
+      say: >-
+        Full lesson on the channel.
+      data: {}
+
+posts:
+  - variant: tip
+    caption: |
+      📌 DGCA exam tip: Article 1 of the Chicago Convention = SOVEREIGNTY.
+      Every State has complete and exclusive sovereignty over the airspace above its territory.
+
+      Full lesson on YouTube: Runway To Cockpit · Air Regulations Ep 1
+      #DGCA #CPL #ATPL #pilottraining #airregulations #ICAO #studentpilot #aviation
+    data:
+      kind: exam
+      title: "Article 1 = *Sovereignty*"
+      sub: "Chicago Convention, 1944"
+      lines:
+        - "Every State has *complete and exclusive* sovereignty over the airspace above its territory"
+        - "Territory = land + territorial waters (Art. 2)"
+        - "India's territorial sea: *12 NM*"
+  - variant: quiz
+    caption: |
+      🧠 Quick check: most books still get this one wrong. Swipe for the answer 👉
+      Comment your answer before you swipe!
+
+      Daily DGCA lessons at 10:15 AM · @runwaytocockpit
+      #DGCA #CPL #pilotlife #airregulations #ICAO #aviationquiz #studentpilot
+    data:
+      q: "How many States sit on the ICAO *Council* today?"
+      options: ["36", "40", "19", "193"]
+      answer: 1
+      explain: "36 → 40 since 12 June 2026, when the Article 50(a) amendment came into force. The 4 new seats are elected at the Extraordinary Assembly, 19–20 Nov 2026."
+  - variant: sheet
+    caption: |
+      📋 Save this for revision: the Chicago Convention & ICAO in 7 facts.
+
+      Full lesson on YouTube: Runway To Cockpit · Air Regulations Ep 1
+      #DGCA #CPL #ATPL #airregulations #ICAO #pilottraining #aviation #cheatsheet
+    data:
+      title: "Chicago Convention & ICAO in *7 facts*"
+      items:
+        - {icon: calendar, t: "Signed 7 Dec 1944 · 52 States", sub: "54 attended the conference"}
+        - {icon: flag, t: "In force 4 April 1947", sub: "96 Articles"}
+        - {icon: law, t: "Art. 1: complete & exclusive *sovereignty*"}
+        - {icon: pin, t: "ICAO HQ: *Montréal*", sub: "UN specialised agency · 193 States"}
+        - {icon: users, t: "Council: *40* States", sub: "since 12 June 2026"}
+        - {icon: doc, t: "Standards *shall* · RPs *should*", sub: "Differences: Art. 38 → AIP GEN 1.7"}
+        - {icon: book, t: "PANS-ATM Doc 4444 · PANS-OPS Doc 8168"}
