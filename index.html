@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Runway To Cockpit</title>
+<meta name="description" content="Clear, visual DGCA ground school for student pilots. One lesson every day at 10:15 AM IST.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#F8F5EF; --card:#FFFFFF; --ink:#10213A; --muted:#5D6B80; --line:#E8E2D7; --accent:#EE6A1A; --sky:#1F6FB2; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  header { display:flex; align-items:center; gap:16px; }
+  h1 { font-size:clamp(28px,6vw,40px); font-weight:800; letter-spacing:-0.02em; margin:0; line-height:1.1; }
+  h1 span { color:var(--accent); }
+  .tag { color:var(--muted); margin:6px 0 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; margin-top:24px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:14px; font-weight:600; background:#fff; }
+  .chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+  a.btn { display:inline-block; margin-top:16px; background:var(--accent); color:#fff; text-decoration:none; font-weight:700; padding:10px 18px; border-radius:12px; }
+  a { color:var(--sky); }
+  footer { margin-top:32px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg width="64" height="64" viewBox="0 0 200 200" aria-hidden="true">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F58A3A"/><stop offset="1" stop-color="#E35A10"/></linearGradient><clipPath id="c"><circle cx="100" cy="100" r="92"/></clipPath></defs>
+      <circle cx="100" cy="100" r="99" fill="#14305A"/><circle cx="100" cy="100" r="92" fill="url(#g)"/>
+      <g clip-path="url(#c)"><path d="M58,210 L88,112 L112,112 L142,210 Z" fill="#fff"/><path d="M98.4,158 L99,146 L101,146 L101.6,158 Z M98.7,138 L99.3,129 L100.7,129 L101.3,138 Z" fill="#14305A"/></g>
+      <g transform="translate(118 64) rotate(-35) scale(1.25)" fill="#fff"><path d="M0,-22 C2.2,-22 3,-19 3,-15 L3,10 C3,14 2,18 0,19 C-2,18 -3,14 -3,10 L-3,-15 C-3,-19 -2.2,-22 0,-22 Z"/><path d="M3,-4 L24,8 L24,12 L3,5 Z M-3,-4 L-24,8 L-24,12 L-3,5 Z"/><path d="M2.4,12 L10,17 L10,19 L2.4,17 Z M-2.4,12 L-10,17 L-10,19 L-2.4,17 Z"/></g>
+    </svg>
+    <div>
+      <h1>Runway <span>To</span> Cockpit</h1>
+      <p class="tag">DGCA ground school · one lesson every day</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <p>Clear, visual ground school for student pilots, one lesson every day at 10:15 AM IST.</p>
+    <p>We start with DGCA Air Regulations: the Chicago Convention, ICAO, Rules of the Air, airspace, separation, aerodromes, licensing and India's Bharatiya Vayuyan Adhiniyam, explained with original 3D animation, illustrated airports and exam traps. Every lesson ends with a quick quiz and a recap you can revise from.</p>
+    <div class="chips"><span class="chip">Air Regulations</span><span class="chip">Exam tips</span><span class="chip on">10:15 AM IST</span></div>
+    <a class="btn" href="https://www.youtube.com/@runwaytocockpit">Watch on YouTube</a>
+  </section>
+
+  <footer>
+    <p>Contact: <a href="mailto:ayaribrahim01@gmail.com">ayaribrahim01@gmail.com</a> · <a href="privacy.html">Privacy policy</a></p>
+  </footer>
+</div>
+</body>
+</html>
