@@ -5,7 +5,7 @@
 series: air-regulations
 series_name: Air Regulations
 episodes:
-  - {ep: 1, code: AR-001, status: scripted, title: "Who Writes the Rules of the Sky?", topics: "Chicago Convention 1944, Art 1-2-12, ICAO bodies (Council 40), SARPs, Annexes, PANS, BVA 2024 chain of law"}
+  - {ep: 1, code: AR-001, status: published, title: "Who Writes the Rules of the Sky?", topics: "Chicago Convention 1944, Art 1-2-12, ICAO bodies (Council 40), SARPs, Annexes, PANS, BVA 2024 chain of law"}
   - {ep: 2, code: AR-002, status: scripted, title: "Chicago Convention: the Articles DGCA Asks", topics: "Art 3 & 3bis, 5 vs 6, 7 cabotage, 9 prohibited areas, 17-20 nationality, 29 documents, 30-33, 16/25/26/35, 83bis, 90, 96 definitions"}
   - {ep: 3, code: AR-003, status: scripted, title: "Freedoms of the Air", topics: "Transit vs Transport Agreements, freedoms 1-9, NCAP 2016 open skies, bilaterals, memory grid"}
   - {ep: 4, code: AR-004, status: scripted, title: "Air Law Conventions You Must Know", topics: "Paris 1919, Warsaw 1929, Rome 1952, Tokyo 1963, Hague 1970, Montreal 1971 & 1988 & 1999, Beijing 2010, Cape Town 2001"}
